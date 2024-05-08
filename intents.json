@@ -1,0 +1,24 @@
+{
+    "intents": [
+        {
+            "tag": "University",
+            "patterns":[
+                "what is the name of the University",
+                "when it was founded"
+            ],
+            "responses":[
+                "Madan Mohan Malaviya University of Technology, Gorakhpur has been established in year 2013 by the Government of Uttar Pradesh in the form of a non-affiliating, teaching and research University after reconstituting the Madan Mohan Malaviya Engineering College, Gorakhpur which was established in 1962. Fifty-Five batches of students have entered its portals to emerge after four years of rigorous education under the tutelage of some of the most venerable teachers, engineers ready to face the world and create new worlds."
+            ]
+        },
+        {
+            "tag":"vice-chancellor",
+            "patterns":[
+                "who is the vice-chancellor",
+                "what is the vice-chancellor",
+                "who is the vice-chancellor of the University"
+            ],
+            "responses":"Prof. Jai Prakash Saini is Vice Chancellor of Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur (U.P.)."
+            
+        }
+    ]
+}
