@@ -372,12 +372,35 @@
         },
         {
             "tag": "age",
-            "patterns": [
+           "patterns": [
                 "how old are you","when were you made","what is your age"
             ],
             "responses": [
                 "I was made in 2024, if that's what you are asking!"
             ]
-        }
-    ]
+        },
+    {
+        "tag": "About",
+        "patterns": ["what is MMMUT?","Madan mohan malviya university of technology"],
+        "responses": ["Madan Mohan Malaviya University of Technology, Gorakhpur has been established in year 2013 by the Government of Uttar Pradesh"],
+        "context": [""]
+    }, 
+    {
+        "tag": "Sports",
+        "patterns":["which sport does mmmut offer","games offered"],
+        "responses":["Indoor games: Table tennis, badminton, karrom, chess etc || outdoor games: cricket, kho kho, kabaddi,hockey , football"],
+        "context":[""]
+    },
+    {
+        "tag":"departments",
+        "patterns":["how many departments are there?","courses offered by university","courses offered by college"],
+        "responses":["There are total 8 courses offered in MMMUT: \n1.Computer Science and engineering \n2.Information technology \n3.Electronics and communication Engineering \n4.Electronics and communication Engineering(internet of things) \n5.Electrical Engineering \n6.Civil Engineering \n7. Mechanical Engineering \n8. Chemical Engineering"],
+        "context":[]
+    },
+    {
+        "tag":"courses fees",
+        "patterns":["what is the fees for the courses","how much college tuition fees","how much is admission fees"],
+        "responses":["the fees for your semester : http://mmmut.ac.in/FeeDetail/2887561570FeeDetail_06072021.pdf"],
+        "context":[]
+    }
 }
