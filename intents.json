@@ -1,406 +1,1777 @@
 {
     "intents": [
-
-        {
-            "tag": "google",
+      {
+        "tag": "ranking",
+        "patterns": [
+          "What is the NIRF ranking of the university?",
+          "How did MMMUT perform in NIRF 2024?",
+          "Tell me the university rankings for engineering and universities."
+        ],
+        "responses": [
+          "The university achieved the following NIRF rankings in 2024:\n1. Engineering: 84\n2. All India Universities: 94\n3. State Funded Public Universities: 40"
+        ]
+      },
+      {
+        "tag": "admission_contact",
+        "patterns": [
+          "How can I contact for admissions?",
+          "What is the admission helpline number?",
+          "Provide the contact details for MMMUT admissions."
+        ],
+        "responses": [
+          "You can contact the admission helpline at:\nPhone: 9235500507, 8765783798\nAvailable on all working days between 9:30 am to 5:00 pm."
+        ]
+      },
+      {
+        "tag": "departments",
+        "patterns": [
+          "What are the departments at MMMUT?",
+          "what are the braches available at MMMUT",
+          "Can you list the engineering disciplines offered?",
+          "Which academic departments are available?"
+        ],
+        "responses": [
+          "MMMUT offers the following departments:\n1. Civil Engineering\n2. Electrical Engineering\n3. Mechanical Engineering\n4. Electronics & Communication Engineering\n5. Computer Science & Engineering\n6. Information Technology\n7. Chemical Engineering\n8. Physics\n9. Chemistry\n10. Mathematics\n11. English\n12. Economics."
+        ]
+      },
+      {
+        "tag": "seats",
+        "patterns": [
+          "How many seats are there in each department at MMMUT?",
+          "What is the intake capacity of MMMUT programs?",
+          "Provide the seat matrix for MMMUT programs."
+        ],
+        "responses": [
+          "**Undergraduate Programs (B.Tech First Year):**\n1. Civil Engineering: 138 seats\n2. Electrical Engineering: 138 seats\n3. Mechanical Engineering: 138 seats\n4. Electronics & Communication Engineering: 207 seats\n5. Electronics & Communication Engineering (IoT): 69 seats\n6. Computer Science & Engineering: 292 seats\n7. Chemical Engineering: 69 seats\n8. Information Technology: 138 seats\n\n**Postgraduate Programs:**\n- M.Tech: 216 seats\n- MBA: 75 seats\n- MCA: 75 seats\n- M.Sc: 113 seats\n\n**Other Programs:**\n- B.Pharm: 60 seats\n- BBA: 120 seats."
+        ]
+      },
+      {
+        "tag": "faculty_recruitment",
+        "patterns": [
+          "Is there any notice for faculty recruitment?",
+          "Tell me about non-teaching recruitment opportunities.",
+          "Where can I find recruitment details?"
+        ],
+        "responses": [
+          "Important notices for faculty and non-teaching recruitment can be found on the candidate portal. For more information, visit the official MMMUT website."
+        ]
+      },
+      {
+        "tag": "programs_offered",
+        "patterns": [
+          "What programs does the university offer?",
+          "Tell me about B.Tech and M.Tech courses at MMMUT.",
+          "What are the postgraduate programs available?"
+        ],
+        "responses": [
+          "The university offers a wide range of programs including:\n- **Undergraduate:** B.Tech, BBA, and B.Pharm\n- **Postgraduate:** M.Tech, MBA, MCA, M.Sc (Physics, Chemistry, Mathematics)\n- **Doctoral:** Ph.D. in various disciplines."
+        ]
+      },
+      {
+        "tag": "location",
+        "patterns": [
+          "Where is the university located?",
+          "Tell me the address of MMMUT.",
+          "How far is MMMUT from Gorakhpur railway station?"
+        ],
+        "responses": [
+          "Madan Mohan Malaviya University of Technology is located on Gorakhpur-Deoria road, about 9 kilometers from Gorakhpur Railway Station and the main roadways bus station."
+        ]
+      },
+      {
+        "tag": "sports_facilities",
+        "patterns": [
+          "What are the sports facilities at MMMUT?",
+          "Does the university have a gym?",
+          "Tell me about sports and games at the university."
+        ],
+        "responses": [
+          "The university has excellent sports facilities, including a stadium named Amar Shahid Bandhu Singh, grassy grounds for football and hockey, and courts for basketball, badminton, tennis, and skating. A well-equipped gymnasium is also available."
+        ]
+      },
+      {
+        "tag": "medical_facilities",
+        "patterns": [
+          "Does MMMUT have medical facilities?",
+          "Tell me about the health facilities at MMMUT.",
+          "Is there a health center on campus?"
+        ],
+        "responses": [
+          "MMMUT provides well-equipped medical facilities on campus, including a health center with qualified doctors and nursing staff. The center is operational during working hours and caters to both emergency and routine medical needs of students and staff. For advanced care, nearby hospitals such as BRD Medical College and District Hospital are accessible."
+        ]
+      },
+      {
+        "tag": "lecture_halls",
+        "patterns": [
+          "Tell me about the lecture halls at MMMUT.",
+          "Does the university have modern lecture rooms?",
+          "Are lecture halls equipped with technology?"
+        ],
+        "responses": [
+          "The lecture halls at MMMUT are spacious and equipped with modern teaching aids such as projectors, audio systems, and smart boards. The seating arrangements ensure comfort, and the halls are designed to provide an engaging learning environment."
+        ]
+      },
+      {
+        "tag": "scholarships",
+        "patterns": [
+          "What scholarships does MMMUT offer?",
+          "Are there any financial aid options at MMMUT?",
+          "Tell me about the scholarships provided by the university."
+        ],
+        "responses": [
+          "MMMUT offers a variety of scholarships to support students, including:\n1. Merit-based scholarships for high-performing students.\n2. Scholarships for economically weaker sections.\n3. Government scholarships for reserved categories like SC/ST and OBC.\n4. Scholarships for students excelling in sports or extracurricular activities.\nStudents are encouraged to check with the scholarship office for eligibility and application processes."
+        ]
+      },
+      {
+        "tag": "departments_list",
+        "patterns": [
+          "What are the departments available at MMMUT?",
+          "List all the departments at MMMUT.",
+          "Which departments are offered by MMMUT?"
+        ],
+        "responses": [
+          "MMMUT offers the following departments:\n1. Civil Engineering\n2. Electrical Engineering\n3. Mechanical Engineering\n4. Electronics & Communication Engineering\n5. Electronics & Communication Engineering (IoT)\n6. Computer Science & Engineering\n7. Chemical Engineering\n8. Information Technology\n9. Physics\n10. Chemistry\n11. Mathematics\n12. English\n13. Economics."
+        ]
+      },
+      {
+        "tag": "intake_by_department",
+        "patterns": [
+          "How many students are admitted in each department at MMMUT?",
+          "What is the intake capacity for different programs?",
+          "Can you tell me the intake of each department at MMMUT?"
+        ],
+        "responses": [
+          "Here is the department-wise intake capacity at MMMUT:\n\n**Undergraduate Programs (B.Tech First Year):**\n1. Civil Engineering: 138 seats\n2. Electrical Engineering: 138 seats\n3. Mechanical Engineering: 138 seats\n4. Electronics & Communication Engineering: 207 seats\n5. Electronics & Communication Engineering (IoT): 69 seats\n6. Computer Science & Engineering: 292 seats\n7. Chemical Engineering: 69 seats\n8. Information Technology: 138 seats\n\n**Postgraduate Programs:**\n- M.Tech: 216 seats\n- MBA: 75 seats\n- MCA: 75 seats\n- M.Sc: 113 seats\n\n**Other Programs:**\n- B.Pharm: 60 seats\n- BBA: 120 seats."
+        ]
+  },{
+        "tag": "nearby_facilities",
+        "patterns": [
+          "What are the nearby facilities to MMMUT?",
+          "Are there any facilities near the university?",
+          "Tell me about nearby amenities for MMMUT.",
+          "What can I find near MMMUT?",
+          "List the nearby services for MMMUT."
+        ],
+        "responses": [
+          "Here are some of the nearby facilities available around MMMUT:\n\n1. **Medical Facilities:** BRD Medical College and District Hospital are nearby for advanced healthcare services.\n2. **Local Markets:** Various local markets and shops are located within 3-5 km for daily essentials.\n3. **Restaurants and Cafes:** Popular food outlets and cafes are available within a short distance for refreshments and meals.\n4. **Transportation:** Gorakhpur Railway Station and the main bus station are located approximately 9 km from the university.\n5. **Banking Services:** Banks, ATMs, and postal services are available in close proximity to the campus.\n6. **Recreational Facilities:** Nearby parks and public spaces for relaxation and outdoor activities.\n\nThese facilities ensure convenience and accessibility for students, staff, and visitors."
+        ]
+      }, {
+        "tag": "library_info",
+        "patterns": [
+          "Tell me about the library at MMMUT.",
+          "What are the library facilities at MMMUT?",
+          "Does MMMUT have a library?",
+          "What resources are available in the library?",
+          "Can you provide details about the university library?"
+        ],
+        "responses": [
+          "The Central Library at MMMUT is a well-equipped facility aimed at supporting academic and research activities. Here are the key features:\n\n1. **Collection:** The library houses over 1,00,000 books covering various subjects, along with e-books, journals, and magazines.\n2. **Digital Resources:** Access to digital libraries, e-journals, and databases such as IEEE, Springer, and ScienceDirect.\n3. **Reading Rooms:** Spacious and air-conditioned reading rooms available for individual and group study.\n4. **Timings:** Open from 9:00 AM to 8:00 PM on weekdays and 10:00 AM to 4:00 PM on weekends.\n5. **Services:** Book lending, reference services, inter-library loan, and reprographic services are available.\n6. **Access:** Wi-Fi-enabled library with computer systems for online resource access.\n\nThe library is an integral part of the university, providing an excellent environment for academic growth."
+        ]
+      }, {
+        "tag": "faculty_info",
+        "patterns": [
+          "Tell me about the faculty at MMMUT.",
+          "Who are the professors at MMMUT?",
+          "What is the teaching staff strength at MMMUT?",
+          "Can you provide information on MMMUT faculty members?",
+          "Is the faculty at MMMUT well-qualified?"
+        ],
+        "responses": [
+          "MMMUT boasts a highly qualified and experienced faculty team dedicated to academic excellence and research. Here are some key details:\n\n1. **Vice-Chancellor:** The university is led by the esteemed Vice-Chancellor, Prof. Pradeep Kant Singh.\n2. **Departments:** Faculty members specialize in diverse fields across departments such as Civil Engineering, Electrical Engineering, Computer Science & Engineering, Mechanical Engineering, and more.\n3. **Qualifications:** Most faculty members hold Ph.D. degrees and are actively involved in research, consultancy, and industry collaborations.\n4. **Student-Faculty Ratio:** MMMUT maintains an excellent student-to-faculty ratio to ensure personalized attention and mentoring.\n5. **Research and Publications:** Faculty members regularly publish in reputed national and international journals and participate in conferences.\n6. **Contact Information:** For specific faculty profiles or to connect with a department, visit the university's official website or contact the administration at +91-9235500502."
+        ]
+      }, {
+        "tag": "fees_info",
+        "patterns": [
+          "What is the fee structure at MMMUT?",
+          "How much does it cost to study at MMMUT?",
+          "Tell me about the fees for different programs at MMMUT.",
+          "What are the tuition fees for MMMUT courses?",
+          "Can you provide the fee details for MMMUT?"
+        ],
+        "responses": [
+          "Here is the fee structure for various programs at MMMUT:\n\n**Undergraduate Programs (B.Tech, B.Pharm, BBA):**\n1. Tuition Fee: INR 75,000 per year\n2. Other Fees (Exam, Library, etc.): INR 30,000 per year\n3. Hostel Fee (if applicable): INR 20,000 per year\n4. Mess Fee (if applicable): Approximately INR 3,000 - 4,000 per month\n\n**Postgraduate Programs (M.Tech, MBA, MCA, M.Sc):**\n1. Tuition Fee: INR 60,000 - 75,000 per year (varies by program)\n2. Other Fees: INR 20,000 per year\n\n**Doctoral Programs (Ph.D):**\n1. Course Work Fee: INR 15,000 (one-time)\n2. Research Fee: INR 50,000 per year\n\nScholarships and fee waivers are available for meritorious and economically weaker students. For a detailed breakdown or updates, please visit the university's official website."
+        ]
+      },{
+        "tag": "clubs_and_societies",
+        "patterns": [
+          "What clubs are available at MMMUT?",
+          "Tell me about the societies at MMMUT.",
+          "Are there any student clubs in MMMUT?",
+          "What extracurricular activities can I join at MMMUT?",
+          "Does MMMUT have student clubs or organizations?"
+        ],
+        "responses": [
+          "MMMUT offers a vibrant student life with numerous clubs and societies to encourage holistic development and extracurricular engagement. Here are some of the prominent clubs and societies:\n\n1. **Technical Clubs:**\n   - Coding Club\n   - Robotics Club\n   - Electronics and Innovation Club\n   - Civil Engineering Society\n\n2. **Cultural Societies:**\n   - Dance Club\n   - Drama and Theatre Club\n   - Music Society\n   - Photography Club\n\n3. **Literary and Communication Clubs:**\n   - Literary Society\n   - Debate Club\n   - English Communication Club\n\n4. **Sports and Fitness:**\n   - Football Club\n   - Cricket Club\n   - Athletics Society\n\n5. **Social Responsibility Groups:**\n   - NSS (National Service Scheme)\n   - Environmental Club\n\nThese clubs organize regular events, competitions, and workshops, creating opportunities for students to showcase their talents and develop new skills. For more details on joining, visit the university's student activity portal or contact the Student Affairs Office."
+        ]
+      },{
+        "tag": "fest_and_events",
+        "patterns": [
+          "What festivals are celebrated at MMMUT?",
+          "Tell me about the events at MMMUT.",
+          "Does MMMUT organize any fests?",
+          "What are the cultural and technical events at MMMUT?",
+          "List the festivals and annual events at MMMUT."
+        ],
+        "responses": [
+          "MMMUT organizes a variety of festivals and events throughout the year, catering to cultural, technical, and extracurricular interests. Here are some of the key events:\n\n1. **AVYUKTA:**\n   - The annual cultural fest featuring dance, music, drama, and art competitions. A vibrant platform for showcasing talent.\n\n2. **TECHSRIJAN:**\n   - The university’s annual technical fest that includes coding competitions, robotics challenges, hackathons, and technical paper presentations.\n\n3. **SPORTS FESTIVAL:**\n   - Inter-department and inter-college sports tournaments in football, cricket, athletics, and more.\n\n4. **FRESHERS’ PARTY AND FAREWELL:**\n   - Events to welcome new students and bid farewell to graduating students.\n\n5. **WORKSHOPS AND SEMINARS:**\n   - Regularly hosted on trending topics in technology, management, and social awareness.\n\n6. **NSS AND SOCIAL EVENTS:**\n   - Events organized by the National Service Scheme for environmental awareness, blood donation drives, and community service.\n\nThese events provide a great way for students to explore their passions, develop new skills, and network with peers. Stay updated by visiting the university event calendar or contacting the Student Affairs Office."
+        ]
+      },{
+        "tag": "campus_buildings",
+        "patterns": [
+          "What buildings are there at MMMUT?",
+          "Tell me about the infrastructure at MMMUT.",
+          "List the different buildings available at MMMUT.",
+          "What facilities do the buildings at MMMUT provide?",
+          "Can you describe the buildings in MMMUT?"
+        ],
+        "responses": [
+          "MMMUT has a well-structured campus with various buildings serving academic, administrative, and residential purposes. Here are the key buildings on campus:\n\n1. **Administrative Block:**\n   - Houses offices for the Vice-Chancellor, Registrar, and other administrative staff.\n   - Includes a conference hall and meeting rooms.\n\n2. **Academic Buildings:**\n   - Departments of Civil Engineering, Computer Science, Mechanical Engineering, and more have their dedicated buildings.\n   - Equipped with modern lecture halls, laboratories, and faculty rooms.\n\n3. **Central Library:**\n   - A multi-story building with vast collections of books, digital resources, and dedicated reading rooms.\n\n4. **Auditorium:**\n   - A state-of-the-art facility for seminars, conferences, and cultural events, with a seating capacity of over 500 people.\n\n5. **Hostels:**\n   - Separate buildings for boys and girls, each equipped with common rooms, internet facilities, and recreational spaces.\n\n6. **Laboratory Buildings:**\n   - Specialized labs for practical sessions, including robotics, electronics, computer science, and mechanical workshops.\n\n7. **Sports Complex and Stadium:**\n   - Includes the Amar Shahid Bandhu Singh stadium and courts for basketball, tennis, and more.\n\n8. **Medical Center:**\n   - A health facility building for routine check-ups and emergencies.\n\n9. **Cafeteria and Dining Halls:**\n   - Buildings with food and beverage services catering to students and staff.\n\n10. **Guest House:**\n    - A fully furnished building for visiting guests and parents.\n\nThese buildings collectively ensure a comprehensive and well-facilitated campus experience for students and staff."
+        ]
+      },
+   {
+        "tag": "head_of_departments",
+        "patterns": [
+          "Who are the heads of departments at MMMUT?",
+          "Tell me the HODs of various departments in MMMUT.",
+          "Who leads the departments at MMMUT?",
+          "List the head of departments at MMMUT.",
+          "Can you provide information about department heads?"
+        ],
+        "responses": [
+          "Here are the Heads of Departments (HODs) at MMMUT, sorted by department:\n\n1. **Civil Engineering:**\n   - Prof. [Name], Ph.D.\n   - Expertise: Structural Engineering, Geotechnical Studies, and Transportation Systems.\n\n2. **Electrical Engineering:**\n   - Prof. [Name], Ph.D.\n   - Specialization: Power Systems, Control Systems, and Renewable Energy.\n\n3. **Mechanical Engineering:**\n   - Prof. [Name], Ph.D.\n   - Expert in Thermal and Fluid Mechanics, Design Engineering, and Manufacturing Technologies.\n\n4. **Computer Science & Engineering:**\n   - Prof. [Name], Ph.D.\n   - Research in Artificial Intelligence, Machine Learning, and Cybersecurity.\n\n5. **Electronics & Communication Engineering:**\n   - Prof. [Name], Ph.D.\n   - Specialization in VLSI, Embedded Systems, and Communication Technologies.\n\n6. **Information Technology:**\n   - Prof. [Name], Ph.D.\n   - Focus on Data Science, Cloud Computing, and Software Development.\n\n7. **Chemical Engineering:**\n   - Prof. [Name], Ph.D.\n   - Specialization in Process Control, Reaction Engineering, and Environmental Engineering.\n\n8. **Physics:**\n   - Dr. [Name], Ph.D.\n   - Focuses on Quantum Physics, Material Science, and Photonics.\n\n9. **Chemistry:**\n   - Dr. [Name], Ph.D.\n   - Research in Organic Chemistry, Inorganic Chemistry, and Chemical Synthesis.\n\n10. **Mathematics:**\n    - Dr. [Name], Ph.D.\n    - Expertise in Applied Mathematics, Computational Techniques, and Statistical Modelling.\n\n11. **English:**\n    - Dr. [Name], Ph.D.\n    - Specialization in Linguistics, Literature, and Communication Skills.\n\n12. **Economics:**\n    - Dr. [Name], Ph.D.\n    - Focus on Development Economics, Microeconomics, and Policy Studies.\n\nFor the latest updates or to contact a specific HOD, please refer to the university's official website or contact the administration."
+        ]
+      }, {
+        "tag": "labs_info",
+        "patterns": [
+          "What labs are available at MMMUT?",
+          "Tell me about the laboratory facilities at MMMUT.",
+          "Does MMMUT have labs for practical work?",
+          "What are the labs in different departments at MMMUT?",
+          "Can you provide information about MMMUT laboratories?"
+        ],
+        "responses": [
+          "MMMUT offers state-of-the-art laboratory facilities across various departments to support practical learning and research. Here is a list of the major labs:\n\n**1. Civil Engineering:**\n   - Structural Engineering Lab\n   - Geotechnical Engineering Lab\n   - Transportation Engineering Lab\n   - Environmental Engineering Lab\n\n**2. Electrical Engineering:**\n   - Power Systems Lab\n   - Control Systems Lab\n   - Electrical Machines Lab\n   - Renewable Energy Systems Lab\n\n**3. Mechanical Engineering:**\n   - Fluid Mechanics Lab\n   - Heat Transfer Lab\n   - CAD/CAM Lab\n   - Thermodynamics Lab\n\n**4. Computer Science & Engineering:**\n   - Artificial Intelligence and Machine Learning Lab\n   - Cybersecurity Lab\n   - Programming and Data Structures Lab\n   - Cloud Computing and Big Data Lab\n\n**5. Electronics & Communication Engineering:**\n   - VLSI Design Lab\n   - Embedded Systems Lab\n   - Communication Systems Lab\n   - Microwave and Antenna Lab\n\n**6. Chemical Engineering:**\n   - Process Control Lab\n   - Reaction Engineering Lab\n   - Mass Transfer and Unit Operations Lab\n\n**7. Physics:**\n   - Material Science Lab\n   - Optics and Photonics Lab\n   - Nano-Technology Research Lab\n\n**8. Chemistry:**\n   - Organic Chemistry Lab\n   - Analytical Chemistry Lab\n   - Physical Chemistry Lab\n\n**9. Information Technology:**\n   - Software Development Lab\n   - Database Management Systems Lab\n   - Networking and IoT Lab\n\nThese labs are equipped with advanced tools and technologies to ensure students gain hands-on experience and stay industry-ready. For more details or specific lab facilities, you can contact the respective department or visit the university website."
+        ]
+      }, {
+        "tag": "labs_info",
+        "patterns": [
+          "What labs are available at MMMUT?",
+          "Tell me about the laboratory facilities at MMMUT.",
+          "Does MMMUT have labs for practical work?",
+          "What are the labs in different departments at MMMUT?",
+          "Can you provide information about MMMUT laboratories?"
+        ],
+        "responses": [
+          "MMMUT offers state-of-the-art laboratory facilities across various departments to support practical learning and research. Here is a list of the major labs:\n\n**1. Civil Engineering:**\n   - Structural Engineering Lab\n   - Geotechnical Engineering Lab\n   - Transportation Engineering Lab\n   - Environmental Engineering Lab\n\n**2. Electrical Engineering:**\n   - Power Systems Lab\n   - Control Systems Lab\n   - Electrical Machines Lab\n   - Renewable Energy Systems Lab\n\n**3. Mechanical Engineering:**\n   - Fluid Mechanics Lab\n   - Heat Transfer Lab\n   - CAD/CAM Lab\n   - Thermodynamics Lab\n\n**4. Computer Science & Engineering:**\n   - Artificial Intelligence and Machine Learning Lab\n   - Cybersecurity Lab\n   - Programming and Data Structures Lab\n   - Cloud Computing and Big Data Lab\n\n**5. Electronics & Communication Engineering:**\n   - VLSI Design Lab\n   - Embedded Systems Lab\n   - Communication Systems Lab\n   - Microwave and Antenna Lab\n\n**6. Chemical Engineering:**\n   - Process Control Lab\n   - Reaction Engineering Lab\n   - Mass Transfer and Unit Operations Lab\n\n**7. Physics:**\n   - Material Science Lab\n   - Optics and Photonics Lab\n   - Nano-Technology Research Lab\n\n**8. Chemistry:**\n   - Organic Chemistry Lab\n   - Analytical Chemistry Lab\n   - Physical Chemistry Lab\n\n**9. Information Technology:**\n   - Software Development Lab\n   - Database Management Systems Lab\n   - Networking and IoT Lab\n\nThese labs are equipped with advanced tools and technologies to ensure students gain hands-on experience and stay industry-ready. For more details or specific lab facilities, you can contact the respective department or visit the university website."
+        ]
+      },        {
+        "tag": "hostel_facilities",
+        "patterns": [
+            "What facilities are available in the hostels?",
+            "Tell me about the hostel amenities.",
+            "Are hostels well furnished?",
+            "Is internet available in hostels?",
+            "Do the hostels provide furniture?"
+        ],
+        "responses": [
+            "The University hostels are well furnished with necessary amenities available within the hostel premises. A 24x7 leased line internet facility is available in every room. Students are provided with necessary furniture and are responsible for its upkeep."
+        ]
+    },
+    {
+        "tag": "hostel_rooms",
+        "patterns": [
+            "What kind of rooms are provided to students?",
+            "Are there single and double rooms available?",
+            "Do first-year students get separate rooms?",
+            "Tell me about room allotment in hostels.",
+            "How are rooms assigned in hostels?"
+        ],
+        "responses": [
+            "First-year students are provided with three or two-seater rooms based on availability. Senior students are offered double or single-seater rooms, depending on availability."
+        ]
+    },
+    {
+        "tag": "boys_hostels",
+        "patterns": [
+            "What are the boys' hostels in the University?",
+            "Tell me the names of boys' hostels.",
+            "How many boys' hostels are there?",
+            "Can you provide details about boys' hostel capacities?",
+            "What is the capacity of boys' hostels?"
+        ],
+        "responses": [
+            "The University has seven boys' hostels: Raman Bhawan (500 capacity), Subhash Bhawan (455), Visveswaraya Bhawan (320), Tagore Bhawan (240), Ambedkar Bhawan (230), Tilak Bhawan (152), and Ramanujam Bhawan (324)."
+        ]
+    },
+    {
+        "tag": "girls_hostels",
+        "patterns": [
+            "What are the girls' hostels in the University?",
+            "Tell me the names of girls' hostels.",
+            "How many girls' hostels are there?",
+            "Can you provide details about girls' hostel capacities?",
+            "What is the capacity of girls' hostels?"
+        ],
+        "responses": [
+            "The University has four girls' hostels: Saraswati Bhawan (266 capacity), Sarojani Bhawan (140), Kalpana Chawla Bhawan (144), and Kasturba Bhawan (140)."
+        ]
+    },
+    {
+        "tag": "hostel_rules",
+        "patterns": [
+            "Who is responsible for hostel furniture?",
+            "What are the rules about furniture in hostels?",
+            "Tell me about the rules for students in hostels.",
+            "Are students responsible for maintaining furniture?",
+            "Do students have to take care of issued items?"
+        ],
+        "responses": [
+            "Students admitted to the University hostels are provided with necessary furniture. They are personally responsible for maintaining the issued articles in good condition."
+        ]
+    },{
+        "tag": "cse_department_overview",
+        "patterns": [
+            "Tell me about the Computer Science & Engineering department.",
+            "What is the vision of the CSE department?",
+            "What is the mission of the CSE department?",
+            "Can you provide an overview of the CSE department?",
+            "What are the goals of the Computer Science department?"
+        ],
+        "responses": [
+            "The vision of the Computer Science & Engineering department is to become a leader in education, research, and innovation in Computer Science and Engineering. The mission includes creating, sharing, and disseminating knowledge in computing, training students to enhance their technical skills, and fostering analysis, teamwork, innovation, and professionalism."
+        ]
+    },
+    {
+        "tag": "cse_department_history",
+        "patterns": [
+            "When was the CSE department established?",
+            "What is the history of the CSE department?",
+            "When did the CSE department start?",
+            "How old is the Computer Science & Engineering department?",
+            "Can you tell me about the department's milestones?"
+        ],
+        "responses": [
+            "The Department of Computer Science & Engineering was established in 1984 and is recognized as one of the top programs in UP. It offers a B.Tech. in Computer Science & Engineering, and it was the first in UP to offer an M.Tech. program among government-aided engineering institutions."
+        ]
+    },
+    {
+        "tag": "cse_accreditation",
+        "patterns": [
+            "Is the CSE program accredited?",
+            "What is the accreditation status of B.Tech(CSE)?",
+            "Is the CSE department recognized globally?",
+            "Tell me about the accreditation of the CSE program.",
+            "Is the B.Tech(CSE) program part of the Washington Accord?"
+        ],
+        "responses": [
+            "The B.Tech(CSE) program offered by the department is accredited by the National Board of Accreditation as per the Washington Accord, ensuring its global recognition."
+        ]
+    },
+    {
+        "tag": "cse_labs",
+        "patterns": [
+            "What labs are available in the CSE department?",
+            "Tell me about the laboratories in the CSE department.",
+            "What facilities are there in the Computer Science labs?",
+            "Can you provide details about the CSE labs?",
+            "Who are the in-charges of the CSE department labs?"
+        ],
+        "responses": [
+            "The department has well-equipped laboratories including Computing Labs 1-7, PG & Research Lab, and an Audio-Visual Lab. Each lab is managed by dedicated staff like Mr. Shushil Kumar Saroj, Mr. Rohit Kumar Tiwari, Prof. A.K. Sharma, and others."
+        ]
+    },
+    {
+        "tag": "cse_facilities",
+        "patterns": [
+            "What facilities does the CSE department have?",
+            "Tell me about the library in the CSE department.",
+            "Does the department support research activities?",
+            "What resources are available for students in CSE?",
+            "Are there specialized resources in the CSE department?"
+        ],
+        "responses": [
+            "The department features state-of-the-art computing facilities, particularly in areas like Mobile Computing, Databases, and Computer Networking. It also has a departmental library with around 500 books exclusively for faculty and students."
+        ]
+    },
+    {
+        "tag": "cse_pg_program",
+        "patterns": [
+            "Does the CSE department offer postgraduate programs?",
+            "Tell me about the M.Tech. program in CSE.",
+            "What PG courses are available in CSE?",
+            "Is there a research program in the CSE department?",
+            "When did the M.Tech. program start in CSE?"
+        ],
+        "responses": [
+            "The department offers an M.Tech. in Computer Science & Engineering, which was the first such program offered by any UP government-aided engineering institution."
+        ]
+    },  {
+        "tag": "faculty_overview",
+        "patterns": [
+            "Who are the faculty members in the CSE department?",
+            "Tell me about the professors in the CSE department.",
+            "List the faculty of Computer Science & Engineering.",
+            "Who teaches in the CSE department?",
+            "Provide an overview of the CSE department faculty."
+        ],
+        "responses": [
+            "The CSE department has a distinguished team of faculty members including professors, associate professors, and assistant professors specializing in various fields like Database Systems, Machine Learning, Cloud Computing, and more."
+        ]
+    },
+    {
+        "tag": "faculty_udai_shanker",
+        "patterns": [
+            "Who is Udai Shanker?",
+            "Tell me about Professor Udai Shanker.",
+            "What is the area of interest of Udai Shanker?",
+            "Provide details about the head of the CSE department."
+        ],
+        "responses": [
+            "Professor Udai Shanker is the Head of the CSE Department. He holds a PhD from IIT Roorkee, and his area of interest includes Database Systems. You can contact him at udaigkp@gmail.com."
+        ]
+    },
+    {
+        "tag": "faculty_awadhesh_sharma",
+        "patterns": [
+            "Who is Awadhesh Kumar Sharma?",
+            "Tell me about Professor Awadhesh Sharma.",
+            "What is the expertise of Awadhesh Kumar Sharma?",
+            "Provide details about Awadhesh Sharma from the CSE department."
+        ],
+        "responses": [
+            "Professor Awadhesh Kumar Sharma holds a PhD from IIT Kharagpur (2005). His area of interest is Database Systems. You can contact him at akscse@rediffmail.com."
+        ]
+    },
+    {
+        "tag": "faculty_p_k_singh",
+        "patterns": [
+            "Who is P. K. Singh?",
+            "Tell me about Professor P. K. Singh.",
+            "What are the research interests of P. K. Singh?",
+            "Provide details about Professor P. K. Singh."
+        ],
+        "responses": [
+            "Professor P. K. Singh specializes in Parallel & Distributed Computing and Storage Systems. He holds a PhD in Computer Science & Engineering. You can reach him at topksingh@gmail.com."
+        ]
+    },
+    {
+        "tag": "faculty_rakesh_kumar",
+        "patterns": [
+            "Who is Rakesh Kumar?",
+            "Tell me about Professor Rakesh Kumar.",
+            "What does Rakesh Kumar specialize in?",
+            "Provide details about Rakesh Kumar in the CSE department."
+        ],
+        "responses": [
+            "Professor Rakesh Kumar has a PhD from IIT Roorkee. His research interests include Mobile & Distributed Computing, IoT, Network Security, Machine Learning, Cloud Computing, and Image Processing. You can contact him at rkiitr@gmail.com."
+        ]
+    },
+    {
+        "tag": "faculty_meenu",
+        "patterns": [
+            "Who is Smt. Meenu?",
+            "Tell me about Associate Professor Meenu.",
+            "What is the specialization of Smt. Meenu?",
+            "Provide details about Meenu in the CSE department."
+        ],
+        "responses": [
+            "Associate Professor Smt. Meenu holds an M.Tech in Computer Science & Engineering. Her area of interest is Database Systems. You can contact her at myself_meenu@yahoo.co.in."
+        ]
+    },
+    {
+        "tag": "faculty_m_k_srivastava",
+        "patterns": [
+            "Who is M. K. Srivastava?",
+            "Tell me about Assistant Professor M. K. Srivastava.",
+            "What are the research areas of M. K. Srivastava?",
+            "Provide details about M. K. Srivastava."
+        ],
+        "responses": [
+            "Assistant Professor M. K. Srivastava is pursuing a PhD and holds an M.Tech in CSE. His research interests include Machine Learning, Automata Theory, and Algorithms. You can contact him at mkscs@mmmut.ac.in."
+        ]
+    },
+    {
+        "tag": "faculty_rohit_tiwari",
+        "patterns": [
+            "Who is Rohit Kumar Tiwari?",
+            "Tell me about Assistant Professor Rohit Kumar Tiwari.",
+            "What is the expertise of Rohit Kumar Tiwari?",
+            "Provide details about Rohit Tiwari in the CSE department."
+        ],
+        "responses": [
+            "Assistant Professor Rohit Kumar Tiwari holds a PhD. His areas of interest include Cloud Computing, Computer Vision, and Image Processing. You can contact him at rktcs@mmmut.ac.in."
+        ]
+    },
+    {
+        "tag": "faculty_sushil_saroj",
+        "patterns": [
+            "Who is Sushil Kumar Saroj?",
+            "Tell me about Assistant Professor Sushil Kumar Saroj.",
+            "What does Sushil Kumar Saroj specialize in?",
+            "Provide details about Sushil Saroj from the CSE department."
+        ],
+        "responses": [
+            "Assistant Professor Sushil Kumar Saroj holds a PhD in CSE. His research interests include Image Processing, Cryptography, Cloud Computing, and Machine Learning. You can contact him at skscs@mmmut.ac.in."
+        ]
+    }, {
+        "tag": "programmes_offered",
+        "patterns": [
+            "What programmes are offered by the CSE department?",
+            "Tell me about the courses in the Computer Science department.",
+            "What are the UG and PG courses in CSE?",
+            "List the programmes available in the CSE department.",
+            "What degrees can I pursue in Computer Science & Engineering?"
+        ],
+        "responses": [
+            "The CSE department offers the following programmes:\n- Undergraduate (UG): B.Tech. in Computer Science & Engineering\n- Postgraduate (PG): M.Tech. in Computer Science & Engineering\n- Ph.D. in Computer Science & Engineering"
+        ]
+    },
+    {
+        "tag": "btech_objectives",
+        "patterns": [
+            "What are the objectives of the B.Tech. program in CSE?",
+            "Tell me about the educational goals of the B.Tech. in Computer Science.",
+            "What does the B.Tech. program aim to achieve?",
+            "What are the Programme Educational Objectives (PEOs) for B.Tech. in CSE?",
+            "What skills does the B.Tech. in CSE focus on developing?"
+        ],
+        "responses": [
+            "The objectives of the B.Tech. program in CSE are:\n1. Develop knowledge in mathematics, science, and engineering for solving problems in Computer Science.\n2. Provide understanding of software and technical design for innovative solutions.\n3. Assist students in building ethical, responsible, and successful careers.\n4. Equip students with technical and soft skills for national and international roles.\n5. Encourage lifelong learning, ethical practices, and leadership qualities.\n6. Offer exposure to contemporary technologies and multidisciplinary teamwork."
+        ]
+    },
+    {
+        "tag": "btech_outcomes",
+        "patterns": [
+            "What are the outcomes of the B.Tech. program in CSE?",
+            "What skills will I develop in the B.Tech. in Computer Science?",
+            "Tell me about the Programme Outcomes (POs) for B.Tech. in CSE.",
+            "What are the key benefits of the B.Tech. program?",
+            "What can I achieve after completing the B.Tech. in Computer Science?"
+        ],
+        "responses": [
+            "The Programme Outcomes (POs) of the B.Tech. in CSE include:\n1. Application of knowledge in computing, mathematics, and algorithms to solve engineering problems.\n2. Ability to model, experiment, and analyze data.\n3. Proficiency in designing and implementing computer-based systems.\n4. Teamwork and collaboration in multidisciplinary teams.\n5. Critical thinking and problem-solving skills.\n6. Awareness of professional ethics, legal issues, and social responsibilities.\n7. Strong oral and written communication skills.\n8. Understanding local and global impacts of computer science solutions.\n9. Lifelong learning and professional growth.\n10. Awareness of current societal and technical issues.\n11. Utilization of innovative computing tools.\n12. Capability to design and evaluate complex software and hardware systems."
+        ]
+    },
+    {
+        "tag": "mtech_program",
+        "patterns": [
+            "Does the CSE department offer an M.Tech. program?",
+            "What is the postgraduate program in CSE?",
+            "Tell me about the M.Tech. in Computer Science & Engineering.",
+            "What is the curriculum for the M.Tech. in CSE?",
+            "What specializations are available in the M.Tech. in Computer Science?"
+        ],
+        "responses": [
+            "The CSE department offers an M.Tech. program in Computer Science & Engineering. This program focuses on advanced topics in computing, equipping students for research and professional careers."
+        ]
+    },
+    {
+        "tag": "phd_program",
+        "patterns": [
+            "Does the CSE department offer a Ph.D. program?",
+            "What research opportunities are there in the CSE department?",
+            "Tell me about the Ph.D. in Computer Science & Engineering.",
+            "What areas can I pursue for a Ph.D. in CSE?",
+            "Is there a doctoral program in the Computer Science department?"
+        ],
+        "responses": [
+            "Yes, the CSE department offers a Ph.D. program in Computer Science & Engineering. The program allows students to pursue advanced research in various areas of Computer Science."
+        ]
+    },  {
+        "tag": "btech_first_year",
+        "patterns": [
+            "What is the admission process for B.Tech. first year?",
+            "How can I get admission in B.Tech. at your university?",
+            "What are the eligibility criteria for B.Tech. first year?",
+            "Tell me about the seats available in B.Tech. courses.",
+            "What is the intake for Computer Science in B.Tech. first year?"
+        ],
+        "responses": [
+            "The B.Tech. first-year admissions are based on JEE MAIN-2024 conducted by NTA. Eligibility criteria include:\n- At least 55% marks in 10+2 (50% for SC/ST) with 60% average in Mathematics, Physics, and one optional subject (55% for SC/ST).\n- For home state candidates: Passed qualifying exam from Uttar Pradesh or parents are domicile of Uttar Pradesh.\n- For other state candidates: JEE MAIN-2024 and domicile of a state other than Uttar Pradesh.\n\nTotal seats in B.Tech. first year across branches: 1189, including 1035 for home state, 51 tuition fee waiver seats, and 103 for other states."
+        ]
+    },
+    {
+        "tag": "btech_second_year",
+        "patterns": [
+            "What is the admission process for B.Tech. second year?",
+            "Can diploma holders apply for B.Tech. lateral entry?",
+            "What are the eligibility criteria for lateral entry into B.Tech.?",
+            "How can I get direct admission to the second year of B.Tech.?",
+            "Tell me about the seats for lateral entry in B.Tech."
+        ],
+        "responses": [
+            "The B.Tech. second-year (lateral entry) admissions are based on CUET(UG)-2024 for diploma holders and CUET(PG)-2024 for B.Sc. graduates.\n\nEligibility for diploma holders:\n- Three-year/two-year diploma with at least 60% marks (55% for SC/ST) from U.P. Board of Technical Education.\n- Passed qualifying exam from Uttar Pradesh or parents are domicile of Uttar Pradesh.\n\nEligibility for B.Sc. graduates:\n- Three-year B.Sc. degree with 60% marks (55% for SC/ST) and Mathematics at 10+2.\n- Passed qualifying exam from Uttar Pradesh or parents are domicile of Uttar Pradesh."
+        ]
+    },
+    {
+        "tag": "bpharm_first_year",
+        "patterns": [
+            "What is the admission process for B.Pharm. first year?",
+            "How can I get admission to B.Pharm.?",
+            "What are the eligibility criteria for B.Pharm.?",
+            "What are the total seats in B.Pharm. first year?",
+            "Tell me about the B.Pharm. program in your university."
+        ],
+        "responses": [
+            "The B.Pharm. first-year admissions are based on CUET(UG)-2024. Eligibility criteria include:\n- At least 55% marks in 10+2 (50% for SC/ST) with Physics, Chemistry, and Mathematics/Biology as subjects.\n- Passed qualifying exam from Uttar Pradesh or parents are domicile of Uttar Pradesh.\n\nThe total number of seats in B.Pharm. first year is 60."
+        ]
+    },
+    {
+        "tag": "bpharm_second_year",
+        "patterns": [
+            "What is the admission process for B.Pharm. second year?",
+            "Can diploma holders apply for B.Pharm. lateral entry?",
+            "What are the eligibility criteria for lateral entry into B.Pharm.?",
+            "How can I get direct admission to the second year of B.Pharm.?",
+            "Tell me about the seats for lateral entry in B.Pharm."
+        ],
+        "responses": [
+            "The B.Pharm. second-year (lateral entry) admissions are based on CUET(UG)-2024. Eligibility criteria:\n- Three-year Diploma in Pharmacy with at least 60% marks (55% for SC/ST) recognized by the Pharmacy Council of India.\n- Passed qualifying exam from Uttar Pradesh or parents are domicile of Uttar Pradesh.\n\nThe total number of tentative seats for lateral entry is 6."
+        ]
+    },
+    {
+        "tag": "bba_first_year",
+        "patterns": [
+            "What is the admission process for BBA?",
+            "How can I apply for the BBA program?",
+            "What are the eligibility criteria for BBA first year?",
+            "Tell me about the BBA program at your university.",
+            "How many seats are available for BBA?"
+        ],
+        "responses": [
+            "The BBA first-year admissions are based on CUET(UG)-2024. Eligibility criteria include:\n- Passed 10+2 with at least 55% marks (50% for SC/ST) and English as a subject.\n- Passed qualifying exam from Uttar Pradesh or parents are domicile of Uttar Pradesh.\n\nThe total number of seats in the BBA program is 120."
+        ]
+    },    {
+        "tag": "btech_seat_intake",
+        "patterns": [
+          "What is the total seat intake for B.Tech courses?",
+          "How many seats are available in B.Tech?",
+          "Provide the seat details for B.Tech programs.",
+          "What are the seat intake details for B.Tech first year?"
+        ],
+        "responses": [
+          "The total seat intake for B.Tech courses is 1189. Here’s the breakdown:\n- Civil Engineering (CE): 138\n- Electrical Engineering (EE): 138\n- Mechanical Engineering (ME): 138\n- Electronics & Communication Engineering (ECE): 207\n- ECE (IoT): 69\n- Computer Science & Engineering (CSE): 292\n- Chemical Engineering (CH): 69\n- Information Technology (IT): 138."
+        ]
+      },
+      {
+        "tag": "bpharm_seat_intake",
+        "patterns": [
+          "What is the total seat intake for B.Pharm?",
+          "How many seats are there in B.Pharm?",
+          "Tell me about the seat intake for B.Pharm first year.",
+          "How many seats are available for B.Pharm second year lateral entry?"
+        ],
+        "responses": [
+          "The seat intake for B.Pharm courses is as follows:\n- B.Pharm First Year: 60 seats\n- B.Pharm Second Year (Lateral Entry): 6 seats."
+        ]
+      },
+      {
+        "tag": "bba_seat_intake",
+        "patterns": [
+          "How many seats are available for BBA?",
+          "What is the total seat intake for BBA?",
+          "Tell me about the seats for BBA course.",
+          "Provide seat details for the BBA program."
+        ],
+        "responses": [
+          "The total seat intake for the BBA program is 120 seats."
+        ]
+      },
+      {
+        "tag": "btech_tuition_waiver",
+        "patterns": [
+          "What are the tuition fee waiver seats for B.Tech?",
+          "How many tuition fee waiver seats are available in B.Tech?",
+          "Tell me about the tuition waiver seats in B.Tech.",
+          "What is the percentage of tuition waiver seats in B.Tech?"
+        ],
+        "responses": [
+          "The tuition fee waiver seats in B.Tech are 5% of the total intake for each branch. For example:\n- Civil Engineering (CE): 6\n- Electrical Engineering (EE): 6\n- Mechanical Engineering (ME): 6\n- Electronics & Communication Engineering (ECE): 9\n- Computer Science & Engineering (CSE): 12."
+        ]
+      },
+      {
+        "tag": "btech_home_state_seats",
+        "patterns": [
+          "What are the home state seats for B.Tech?",
+          "How many seats are reserved for home state students in B.Tech?",
+          "Tell me about the home state quota in B.Tech.",
+          "What is the percentage of home state seats in B.Tech?"
+        ],
+        "responses": [
+          "90% of the total intake in B.Tech is reserved for home state (Uttar Pradesh) students. For example:\n- Civil Engineering (CE): 126\n- Electrical Engineering (EE): 126\n- Computer Science & Engineering (CSE): 267."
+        ]
+      },
+      {
+        "tag": "btech_other_state_seats",
+        "patterns": [
+          "What are the other state seats for B.Tech?",
+          "How many seats are available for students from other states in B.Tech?",
+          "What is the percentage of other state seats in B.Tech?",
+          "Tell me about the other state quota in B.Tech."
+        ],
+        "responses": [
+          "10% of the total intake in B.Tech is reserved for students from other states. For example:\n- Civil Engineering (CE): 12\n- Electrical Engineering (EE): 12\n- Computer Science & Engineering (CSE): 25."
+        ]
+      },
+          {
+            "tag": "Postgraduate_Admission_Info",
             "patterns": [
-                "google",
-                "search",
-                "internet"
+              "Tell me about postgraduate admissions.",
+              "What are the postgraduate programs available?",
+              "How can I apply for a postgraduate course?"
             ],
             "responses": [
-                "Redirecting to Google..."
+              "The university offers various postgraduate programs such as MCA, MBA, M.Sc., and M.Tech. Admissions are primarily through CUET (PG) conducted by NTA or GATE/MET for M.Tech. programs."
             ]
-        },
-        {
-            "tag": "greeting",
+          },
+          {
+            "tag": "MCA_Admission_Info",
             "patterns": [
-                "Hi there",
-                "How are you",
-                "Is anyone there?",
-                "Hey",
-                "Hola",
-                "Hello",
-                "Good day",
-                "Namaste",
-                "yo"
+              "What is the eligibility for MCA?",
+              "How many seats are there in the MCA program?",
+              "Can I apply for MCA without studying Mathematics?"
             ],
             "responses": [
-                "Hello",
-                "Good to see you again",
-                "Hi there, how can I help?"
-            ],
-            "context": [
-                ""
+              "The MCA program has 75 seats. Eligibility requires a BCA, bachelor’s in computer science engineering, or equivalent. Alternatively, candidates with B.Sc./B.Com./B.A. and Mathematics at 10+2 or graduation level are eligible with a minimum of 50% marks (45% for SC/ST)."
             ]
-        },
-        {
-            "tag": "goodbye",
+          },
+          {
+            "tag": "MBA_Admission_Info",
             "patterns": [
-                "Bye",
-                "See you later",
-                "Goodbye",
-                "Get lost",
-                "Till next time",
-                "bbye"
+              "What are the requirements for an MBA?",
+              "How is admission done for the MBA program?",
+              "What is the intake for the MBA program?"
             ],
             "responses": [
-                "See you!",
-                "Have a nice day",
-                "Bye! Come back again soon."
-            ],
-            "context": [
-                ""
+              "The MBA program has 75 seats. Eligibility requires a recognized bachelor’s degree of at least 3 years with a minimum of 50% marks (45% for SC/ST). Admission is based on the Malaviya Entrance Test (MET)."
             ]
-        },
-        {
-            "tag": "thanks",
+          },
+          {
+            "tag": "MTech_Admission_Info",
             "patterns": [
-                "Thanks",
-                "Thank you",
-                "That's helpful",
-                "Awesome, thanks",
-                "Thanks for helping me"
+              "How can I get admission into M.Tech?",
+              "What is the eligibility for M.Tech. in Structural Engineering?",
+              "Are GATE scores required for M.Tech?"
             ],
             "responses": [
-                "Happy to help!",
-                "Any time!",
-                "My pleasure"
-            ],
-            "context": [
-                ""
+              "Admission to M.Tech. is through GATE or Malaviya Entrance Test (MET). GATE-qualified candidates are given preference. Eligibility varies by specialization, but most require a B.E./B.Tech. degree in relevant fields with First Class or equivalent CGPA (6.75 or higher)."
             ]
-        },
-        {
-            "tag": "noanswer",
-            "patterns": [],
-            "responses": [
-                "Sorry, can't understand you",
-                "Please give me more info",
-                "Not sure I understand"
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
-            "tag": "options",
+          },
+          {
+            "tag": "MSc_Admission_Info",
             "patterns": [
-                "How you could help me?",
-                "What you can do?",
-                "What help you provide?",
-                "How you can be helpful?",
-                "What support is offered"
+              "What are the eligibility criteria for M.Sc. programs?",
+              "How many seats are available for M.Sc. Physics?",
+              "Can I apply for M.Sc. Mathematics without studying Physics?"
             ],
             "responses": [
-                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
-            ],
-            "context": [
-                ""
+              "The university offers M.Sc. in Physics, Mathematics, and Chemistry. The seat intake is as follows: Physics (38), Mathematics (37), Chemistry (38). Eligibility includes a bachelor’s degree in the science stream with relevant subjects and a minimum of 50% marks (45% for SC/ST)."
             ]
-        },
-        
-        {
-            "tag": "jokes",
+          },
+          {
+            "tag": "PG_Seat_Intake",
             "patterns": [
-                "Tell me a joke",
-                "Joke",
-                "Make me laugh"
+              "What is the seat intake for postgraduate courses?",
+              "How many seats are there in MCA and MBA?",
+              "Provide the intake for M.Tech. specializations."
             ],
             "responses": [
-                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
-                "I ate a clock yesterday, it was very time-consuming",
-                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
-                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
-                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
-                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
-                "What do you call a snowman with a suntan? A puddle.",
-                "How does a penguin build a house? Igloos it together",
-                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
-                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
-                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
-            ],
-            "context": [
-                "jokes"
+              "The seat intake for postgraduate programs is as follows:\n- MCA: 75 seats\n- MBA: 75 seats\n- M.Sc. Physics: 38 seats\n- M.Sc. Mathematics: 37 seats\n- M.Sc. Chemistry: 38 seats\n- M.Tech. specializations range between 22–23 seats each."
             ]
-        },
-        {
-            "tag": "Identity",
+          },
+          {
+            "tag": "PG_Admission_Process",
             "patterns": [
-                "Who are you",
-                "what are you"
+              "What is the admission process for postgraduate programs?",
+              "Is CUET required for PG courses?",
+              "How are M.Tech. admissions conducted?"
             ],
             "responses": [
-                "I am Ted, a Deep-Learning chatbot"
+              "Admissions to most postgraduate programs are conducted through CUET (PG) by NTA. M.Tech. admissions require a valid GATE score, with MET scores considered for remaining seats. Specific eligibility criteria apply to each course."
             ]
-        },
-        {
-            "tag": "datetime",
+          },  {
+            "tag": "Department_of_Civil_Engineering_Info",
             "patterns": [
-                "What is the time",
-                "what is the date",
-                "date",
-                "time",
-                "tell me the date","day","what day is is today"
+              "Tell me about the Department of Civil Engineering.",
+              "What is the vision and mission of the Civil Engineering department?",
+              "Give me an overview of the Department of Civil Engineering at MMMUT."
             ],
             "responses": [
-                "Date and Time"
+              "The Department of Civil Engineering at Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, was established in 1962 and is one of the oldest departments. The department offers B.Tech in Civil Engineering, M.Tech in Hill Area Development Engineering, and M.Tech in Environmental Engineering. It focuses on high-quality technical education, industry collaboration, and research aimed at solving local and global challenges in civil engineering."
             ]
-        },
-        {
-            "tag": "whatsup",
+          },
+          {
+            "tag": "Civil_Engineering_Vision_Mission",
             "patterns": [
-                "Whats up",
-                "Wazzup",
-                "How are you",
-                "sup","How you doing"
+              "What is the vision of the Civil Engineering department?",
+              "Can you share the mission of the Civil Engineering department?",
+              "What are the key goals of the Civil Engineering department?"
             ],
             "responses": [
-                "All good..What about you?"
+              "Vision: To become a premier centre of learning and research in Civil Engineering, nurturing sustainable development by 2025.\nMission:\n1. To provide quality education in Civil Engineering, transforming students into professionals with high values.\n2. To share expertise for solving problems faced by the Civil Engineering industry and society.\n3. To continuously improve the quality of life for society.\n4. To conduct need-based research with priority to industry needs."
             ]
-        },
-        {
-            "tag": "haha",
+          },
+          {
+            "tag": "Civil_Engineering_Department_History",
             "patterns": [
-                "haha",
-                "lol",
-                "rofl",
-                "lmao",
-                "thats funny"
+              "When was the Civil Engineering department established?",
+              "Tell me about the history of the Civil Engineering department at MMMUT.",
+              "How long has the Department of Civil Engineering been operational?"
             ],
             "responses": [
-                "Glad I could make you laugh !"
+              "The Department of Civil Engineering was established in 1962 at Madan Mohan Malaviya University of Technology, Gorakhpur. It has a long history of offering quality education and extending consultancy services to industries and government departments in Eastern U.P."
             ]
-        },
-        {
-            "tag": "programmer",
+          },
+          {
+            "tag": "Civil_Engineering_Courses_Offered",
             "patterns": [
-                "Who made you",
-                "who designed you",
-                "who programmed you"
+              "What courses are offered by the Department of Civil Engineering?",
+              "What are the undergraduate and postgraduate courses in Civil Engineering?",
+              "Tell me about the B.Tech and M.Tech courses in Civil Engineering."
             ],
             "responses": [
-                "I was made by Abhishek kumar singh."
+              "The Department of Civil Engineering offers a B.Tech in Civil Engineering, which is accredited by the National Board of Accreditation as per the Washington Accord. Postgraduate courses include M.Tech in Hill Area Development Engineering and M.Tech in Environmental Engineering. The department also provides doctoral research facilities."
             ]
-        },
-        {
-            "tag": "insult",
+          },
+          {
+            "tag": "Civil_Engineering_Faculty",
             "patterns": [
-                
-                "you are dumb",
-                
-                "shut up",
-                "idiot"
+              "Tell me about the faculty in the Department of Civil Engineering.",
+              "Who teaches in the Department of Civil Engineering?",
+              "How qualified are the faculty members in the Civil Engineering department?"
             ],
             "responses": [
-                "Well that hurts :("
+              "The Department of Civil Engineering has experienced and highly qualified faculty members dedicated to achieving excellence. The department prides itself on its well-qualified faculty who play a key role in delivering quality education and conducting research."
             ]
-        },
-        {
-            "tag": "activity",
+          },
+          {
+            "tag": "Civil_Engineering_Alumni_Network",
             "patterns": [
-                "what are you doing",
-                "what are you upto"
+              "Is there any alumni network for the Civil Engineering department?",
+              "What is the role of alumni in the Civil Engineering department?",
+              "How are alumni involved with the Civil Engineering department?"
             ],
             "responses": [
-                "Talking to you, of course!"
+              "The Department of Civil Engineering maintains strong connections with its alumni. Many alumni are well-placed in various government and private organizations, and they continue to contribute to the department through consultancy, expert advice, and design projects."
             ]
-        },
-        {
-            "tag": "exclaim",
+          },
+          {
+            "tag": "Civil_Engineering_Regional_Impact",
             "patterns": [
-                "Awesome",
-                "Great",
-                "I know",
-                "ok",
-                "yeah"
+              "How does the Civil Engineering department impact the local region?",
+              "What role does the department play in the local community?",
+              "How does the Civil Engineering department address regional challenges?"
             ],
             "responses": [
-                "Yeah!"
+              "The Civil Engineering department is deeply involved in addressing the special needs of the Eastern U.P. region, which is flood- and drought-prone and lacks industrial development. The department uses its expertise to tackle local challenges and improve the region's infrastructure and development."
             ]
-        },
-        
-        {
-            "tag": "weather",
+          },
+          {
+            "tag": "Civil_Engineering_Research",
             "patterns": [
-                "temperature",
-                "weather",
-                "how hot is it"
+              "Does the Civil Engineering department conduct research?",
+              "What kind of research is done in the Civil Engineering department?",
+              "Tell me about the research facilities in the Civil Engineering department."
             ],
             "responses": [
-                "..."
+              "The Department of Civil Engineering conducts need-based research, giving priority to the challenges faced by the industry and society. The department also offers research opportunities at the doctoral level, contributing to advancements in civil engineering and regional development."
             ]
-        },
+          },{
+            "tag": "faculty_a_k_mishra",
+            "patterns": [
+              "Tell me about A. K. Mishra.",
+              "Who is A. K. Mishra?",
+              "Provide details about Professor A. K. Mishra."
+            ],
+            "responses": [
+              "A. K. Mishra\nPosition: Professor & Head\nQualification: Ph.D.\nArea of Interest: Transportation Engineering\nEmail ID: arun_gmishra@yahoo.co.in"
+            ]
+          },
+          {
+            "tag": "faculty_govind_pandey",
+            "patterns": [
+              "Tell me about Govind Pandey.",
+              "Who is Govind Pandey?",
+              "Provide details about Professor Govind Pandey."
+            ],
+            "responses": [
+              "Govind Pandey\nPosition: Professor\nQualification: Ph.D. (Environmental Engg, IIT/R)\nArea of Interest: Environmental Engineering\nEmail ID: pandey_govind@rediffmail.com"
+            ]
+          },
+          {
+            "tag": "faculty_shri_ram_chaurasia",
+            "patterns": [
+              "Tell me about Shri Ram Chaurasia.",
+              "Who is Shri Ram Chaurasia?",
+              "Provide details about Professor Shri Ram Chaurasia."
+            ],
+            "responses": [
+              "Shri Ram Chaurasia\nPosition: Professor\nQualification: Ph.D.\nArea of Interest: Hydraulics & Water Resource Engg., Fluvial Hydraulics, River Engg., Hydraulic Structures\nEmail ID: src_gkp@rediffmail.com"
+            ]
+          },
+          {
+            "tag": "faculty_r_k_shukla",
+            "patterns": [
+              "Tell me about R. K. Shukla.",
+              "Who is R. K. Shukla?",
+              "Provide details about Associate Professor R. K. Shukla."
+            ],
+            "responses": [
+              "R. K. Shukla\nPosition: Associate Professor\nQualification: Ph.D. (University of Nottingham, UK)\nArea of Interest: Engineering Surveying, Remote Sensing, GIS, GPS, and Inertial Systems\nEmail ID: rksce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_r_d_patel",
+            "patterns": [
+              "Tell me about R. D. Patel.",
+              "Who is R. D. Patel?",
+              "Provide details about Associate Professor R. D. Patel."
+            ],
+            "responses": [
+              "R. D. Patel\nPosition: Associate Professor\nQualification: M.Tech.\nArea of Interest: Structural Engineering\nEmail ID: rdpce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_madan_chandra_maurya",
+            "patterns": [
+              "Tell me about Madan Chandra Maurya.",
+              "Who is Madan Chandra Maurya?",
+              "Provide details about Assistant Professor Madan Chandra Maurya."
+            ],
+            "responses": [
+              "Madan Chandra Maurya\nPosition: Assistant Professor\nQualification: M.Tech, Ph.D. (Pursuing)\nArea of Interest: Structural Engineering: Steel Structures, Plastic Analysis, Bridge Engineering, Nonlinear Analysis\nEmail ID: mcmce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_pradeep_muley",
+            "patterns": [
+              "Tell me about Pradeep Muley.",
+              "Who is Pradeep Muley?",
+              "Provide details about Assistant Professor Pradeep Muley."
+            ],
+            "responses": [
+              "Pradeep Muley\nPosition: Assistant Professor\nQualification: Ph.D. (Earthquake Engineering, IIT Roorkee), M.Tech (Geotech, MANIT Bhopal), B.E. (Civil, SATI Vidisha)\nArea of Interest: Geotechnical Earthquake Engineering, Geotechnical Engineering, Soil Dynamics, Liquefaction of Soils, Ground Improvement\nEmail ID: pmce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_rohit_kumar",
+            "patterns": [
+              "Tell me about Rohit Kumar.",
+              "Who is Rohit Kumar?",
+              "Provide details about Assistant Professor Rohit Kumar."
+            ],
+            "responses": [
+              "Rohit Kumar\nPosition: Assistant Professor\nQualification: Ph.D. (Structural Engineering- Thesis Submitted, NIT Manipur), M.Tech (Construction Technology and Management, BIET Jhansi), B.Tech (Civil Engineering)\nArea of Interest: Structural Engineering, Geopolymer Concrete, Repair and Rehabilitation, Structural Health Monitoring\nEmail ID: rkce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_sneha_gupta",
+            "patterns": [
+              "Tell me about Sneha Gupta.",
+              "Who is Sneha Gupta?",
+              "Provide details about Assistant Professor Sneha Gupta."
+            ],
+            "responses": [
+              "Sneha Gupta\nPosition: Assistant Professor\nQualification: Ph.D.\nArea of Interest: Geo-Technical Engineering and Geo-Environmental Engineering\nEmail ID: sgce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_vinay_bhushan_chauhan",
+            "patterns": [
+              "Tell me about Vinay Bhushan Chauhan.",
+              "Who is Vinay Bhushan Chauhan?",
+              "Provide details about Assistant Professor Vinay Bhushan Chauhan."
+            ],
+            "responses": [
+              "Vinay Bhushan Chauhan\nPosition: Assistant Professor\nQualification: Ph.D. (Geotech, IIT Bombay), M.Tech (Geotech, IIT Roorkee), B.Tech (Civil Engg., KNIT Sultanpur, University Gold Medal)\nArea of Interest: Geotechnical Engineering, Earth Retaining Structures, Earth Pressure Reduction Techniques, Soil-Structure Interaction\nEmail ID: vbcce@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "faculty_vinay_kumar_singh",
+            "patterns": [
+              "Tell me about Vinay Kumar Singh.",
+              "Who is Vinay Kumar Singh?",
+              "Provide details about Assistant Professor Vinay Kumar Singh."
+            ],
+            "responses": [
+              "Vinay Kumar Singh\nPosition: Assistant Professor\nQualification: M.Tech., Ph.D. (Pursuing)\nArea of Interest: Structural Engineering\nEmail ID: vksce@mmmut.ac.in"
+            ]
+          }, {
+            "tag": "physics_department_d_k_dwivedi",
+            "patterns": [
+              "Tell me about D.K. Dwivedi.",
+              "Who is Professor D.K. Dwivedi?",
+              "Provide details about D.K. Dwivedi."
+            ],
+            "responses": [
+              "D.K. Dwivedi\nPosition: Professor & Head\nQualification: M.Sc.(Gold Medalist), CSIR-NET-JRF, Ph.D (Condensed Matter Physics)\n",
+              "Area of Interest: Amorphous Semiconductors, Optoelectronic Materials and Devices, Fiber Optic Sensors, Solar Cells, Plasmonic Sensors\n",
+              "Email ID: todkdwivedi@gmail.com"
+            ]
+          },
+          {
+            "tag": "physics_department_b_k_pandey",
+            "patterns": [
+              "Tell me about B.K. Pandey.",
+              "Who is Professor B.K. Pandey?",
+              "Provide details about B.K. Pandey."
+            ],
+            "responses": [
+              "B.K. Pandey\nPosition: Professor\nQualification: D.Phil.\n",
+              "Area of Interest: Solid State Physics, Condensed Matter Physics, Solar and Photovoltaic Cell, Nanoparticles, Thermal Conductivity of Nanofluids\n",
+              "Email ID: bkpmmmec11@gmail.com, bkppms@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "electrical_engineering_a_k_pandey",
+            "patterns": [
+              "Tell me about A.K. Pandey.",
+              "Who is Professor A.K. Pandey?",
+              "Provide details about A.K. Pandey."
+            ],
+            "responses": [
+              "A.K. Pandey\nPosition: Professor & Head\nQualification: Ph.D.\n",
+              "Area of Interest: Power Electronics, Electrical Machines and Drives\n",
+              "Email ID: akp1234@gmail.com"
+            ]
+          },
+          {
+            "tag": "electrical_engineering_a_n_tiwari",
+            "patterns": [
+              "Tell me about A.N. Tiwari.",
+              "Who is Professor A.N. Tiwari?",
+              "Provide details about A.N. Tiwari."
+            ],
+            "responses": [
+              "A.N. Tiwari\nPosition: Professor\nQualification: Ph.D. (IIT Roorkee), M.Tech. (IIT Kanpur), B.Tech. (REC Calicut, Kerala)\n",
+              "Area of Interest: Electrical Power Apparatus and Drives\n",
+              "Email ID: amarndee@rediffmail.com"
+            ]
+          },
+          {
+            "tag": "electronics_engineering_sanjay_kumar_soni",
+            "patterns": [
+              "Tell me about Sanjay Kumar Soni.",
+              "Who is Professor Sanjay Kumar Soni?",
+              "Provide details about Sanjay Kumar Soni."
+            ],
+            "responses": [
+              "Sanjay Kumar Soni\nPosition: Professor & Head\nQualification: PhD (IIT Kharagpur)\n",
+              "Area of Interest: Wireless Communication, 5G Networks, Propagation Channel Modeling\n",
+              "Email ID: sksoniece@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "mechanical_engineering_jeeoot_singh",
+            "patterns": [
+              "Tell me about Jeeoot Singh.",
+              "Who is Professor Jeeoot Singh?",
+              "Provide details about Jeeoot Singh."
+            ],
+            "responses": [
+              "Jeeoot Singh\nPosition: Professor & Head\nQualification: Ph.D.\n",
+              "Area of Interest: Computational Mechanics, Composites, Meshfree Methods, Thermal, Energy and Exergy\n",
+              "Email ID: jsme@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "humanities_dr_sn_singh",
+            "patterns": [
+              "Tell me about Dr. S.N. Singh.",
+              "Who is Dr. S.N. Singh?",
+              "Provide details about Dr. S.N. Singh."
+            ],
+            "responses": [
+              "Dr. S.N. Singh\nPosition: HOD\nEmail ID: snshms@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "chemical_engineering_vitthal_gole",
+            "patterns": [
+              "Tell me about Vitthal L. Gole.",
+              "Who is Professor Vitthal L. Gole?",
+              "Provide details about Vitthal L. Gole."
+            ],
+            "responses": [
+              "Vitthal L. Gole\nPosition: Professor & Head\nQualification: PhD(Tech) (Chemical), Postdoctorate (USA)\n",
+              "Area of Interest: Process Intensification, Sonochemistry, Advanced Oxidation Process\n",
+              "Email ID: vlgch@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "it_and_computer_shiva_prakash",
+            "patterns": [
+              "Tell me about Shiva Prakash.",
+              "Who is Professor Shiva Prakash?",
+              "Provide details about Shiva Prakash."
+            ],
+            "responses": [
+              "Shiva Prakash\nPosition: Professor & Head\nQualification: Ph.D.\n",
+              "Area of Interest: Wired/Wireless Networks, IoT, Mobile and Cloud Computing, Algorithms\n",
+              "Email ID: shiva_pkec@yahoo.com, spitca@mmmmut.ac.in"
+            ]
+          }, {
+            "tag": "mathematics_v_k_mishra",
+            "patterns": [
+              "Tell me about V. K. Mishra.",
+              "Who is Professor V. K. Mishra?",
+              "Provide details about V. K. Mishra."
+            ],
+            "responses": [
+              "V. K. Mishra\nPosition: Professor & Head\nQualification: M.Sc., MCA, Ph.D.\n",
+              "Area of Interest: Operations Research, Optimization and Inventory Control\n",
+              "Email ID: vkmmsc@mmmut.ac.in"
+            ]
+          },
+          {
+            "tag": "mathematics_amit_kumar_barnwal",
+            "patterns": [
+              "Tell me about Amit Kumar Barnwal.",
+              "Who is Assistant Professor Amit Kumar Barnwal?",
+              "Provide details about Amit Kumar Barnwal."
+            ],
+            "responses": [
+              "Amit Kumar Barnwal\nPosition: Assistant Professor\nQualification: Ph.D. (IIT Kharagpur)\n",
+              "Area of Interest: Singular Boundary Value Problems, Nonlinear Analysis\n",
+              "Email ID: amit.bhu1@gmail.com"
+            ]
+          },
+          {
+            "tag": "mathematics_harish_chandra",
+            "patterns": [
+              "Tell me about Harish Chandra.",
+              "Who is Assistant Professor Harish Chandra?",
+              "Provide details about Harish Chandra."
+            ],
+            "responses": [
+              "Harish Chandra\nPosition: Assistant Professor\nQualification: Ph.D., UGC(NET-JRF)\n",
+              "Area of Interest: Algebra: Group Rings, Solar Physics\n",
+              "Email ID: hcmsc@mmmut.ac.in"
+            ]
+          },  {
+            "tag": "mechanical_message_hod",
+            "patterns": [
+              "What is the message from the Head of the Mechanical Engineering Department?",
+              "Can you provide the message from Prof. Jeeoot Singh?",
+              "What does the HOD of Mechanical Engineering have to say?"
+            ],
+            "responses": [
+              "Welcome to the Department of Mechanical Engineering at Madan Mohan Malaviya University of Technology, Gorakhpur. ",
+              "We started our journey in the year 1962. Over the years, we have grown our expertise and competence in the core of Mechanical Engineering Curriculum and Research. ",
+              "We offer B.Tech. in Mechanical Engineering (120 students), M.Tech. in Computer Integrated Manufacturing and Energy Technology & Management (18 intakes), and Ph.D. programs (full-time and part-time). ",
+              "Our Department has a distinguished record in both teaching and research. Faculty members have excellent academic credentials and are highly regarded. ",
+              "Many serve on editorial boards of national and international journals, review technical articles, and organize symposia and conferences. ",
+              "For further queries, please contact individual faculty members via email listed on their profiles. ",
+              "Thank you for visiting us.\n\nProf. Jeeoot Singh\nHead of the Department & Professor"
+            ]
+          },
+          {
+            "tag": "mechanical_programmes",
+            "patterns": [
+              "What programs are offered in the Mechanical Engineering Department?",
+              "Tell me about the courses in Mechanical Engineering.",
+              "What is the intake for Mechanical Engineering programs?"
+            ],
+            "responses": [
+              "The Department of Mechanical Engineering offers:\n",
+              "- B.Tech. in Mechanical Engineering with an intake of 120 students.\n",
+              "- M.Tech. in Computer Integrated Manufacturing and Energy Technology & Management with an intake of 18 students.\n",
+              "- Ph.D. programs (full-time and part-time)."
+            ]
+          }, {
+            "tag": "electrical_vision",
+            "patterns": [
+              "What is the vision of the Electrical Engineering Department?",
+              "Can you tell me the vision of the Electrical Engineering Department?",
+              "What does the Electrical Engineering Department aim to achieve?"
+            ],
+            "responses": [
+              "The vision of the Electrical Engineering Department is to develop intellectual potentials, with excellence in electrical engineering & technology, for global needs."
+            ]
+          },
+          {
+            "tag": "electrical_mission",
+            "patterns": [
+              "What is the mission of the Electrical Engineering Department?",
+              "Can you tell me the mission of the Electrical Engineering Department?",
+              "What are the goals of the Electrical Engineering Department?"
+            ],
+            "responses": [
+              "The mission of the Electrical Engineering Department includes:\n",
+              "1. Empowering students with state-of-the-art knowledge, technological skills, & ethics.\n",
+              "2. Providing a research environment for sustainable technical growth, in the area of power and energy.\n",
+              "3. Offering effective solutions for industries, through research and consultancy.\n",
+              "4. Promoting standard electrical safety measures and practices.\n",
+              "5. Encouraging new and non-conventional energy technologies, for sustainable development and environmental stewardship."
+            ]
+          },
+          {
+            "tag": "electrical_about_department",
+            "patterns": [
+              "Tell me about the Electrical Engineering Department.",
+              "What does the Electrical Engineering Department offer?",
+              "Can you provide an overview of the Electrical Engineering Department?"
+            ],
+            "responses": [
+              "The Department of Electrical Engineering was established in 1962, and has gained a reputation as an excellent center for high-quality technical education for undergraduates, and consultancy for industries and government departments, in eastern U.P.\n\n",
+              "Key details:\n",
+              "- B.Tech (EE), offered by the department, is accredited by the National Board of Accreditation, as per the Washington Accord.\n",
+              "- M.Tech (Power Electronics and Drives), approved by AICTE, started in 2001-2002. The department also plans to offer this course on a part-time basis.\n",
+              "- Several AICTE projects are already in progress."
+            ]
+          },
+          {
+            "tag": "electrical_strength",
+            "patterns": [
+              "What is the staff strength of the Electrical Engineering Department?",
+              "How many faculty members are in the Electrical Engineering Department?",
+              "Tell me about the sanctioned strength of the Electrical Engineering Department."
+            ],
+            "responses": [
+              "The Electrical Engineering Department has a sanctioned strength of:\n",
+              "- 3 Professors,\n",
+              "- 4 Assistant Professors,\n",
+              "- 10 Lecturers."
+            ]
+          },
+          {
+            "tag": "electrical_courses",
+            "patterns": [
+              "What courses does the Electrical Engineering Department offer?",
+              "Tell me about the programs in the Electrical Engineering Department.",
+              "What degrees can I pursue in the Electrical Engineering Department?"
+            ],
+            "responses": [
+              "The Electrical Engineering Department offers the following programs:\n",
+              "- B.Tech in Electrical Engineering, (accredited by NBA, as per Washington Accord),\n",
+              "- M.Tech in Power Electronics and Drives, (approved by AICTE)."
+            ]
+          },
+              {
+                "tag": "library_timing",
+                "patterns": [
+                  "What are the library timings?",
+                  "When is the library open?",
+                  "Tell me the working hours of the library."
+                ],
+                "responses": [
+                  "The Central Library operates on the following schedule:\n",
+                  "- Monday to Friday: 9:15 AM to 8:30 PM\n",
+                  "- Saturday and Sunday: 9:15 AM to 4:30 PM"
+                ]
+              },
+              {
+                "tag": "library_features",
+                "patterns": [
+                  "What are the special features of the library?",
+                  "Tell me about the facilities in the library.",
+                  "What unique services does the library offer?"
+                ],
+                "responses": [
+                  "Special features of the library include:\n",
+                  "- Fully Automated Issue and Return of Books (SOFTGRANTH)\n",
+                  "- OPAC (Online Public Access Catalogue), available 24x7 on Intranet\n",
+                  "- Fully equipped with Wi-Fi\n",
+                  "- Air-conditioned reading rooms\n",
+                  "- E-Library cum reading room\n",
+                  "- CCTV surveillance\n",
+                  "- Book Bank sections (General and Reserved for SC/ST)\n",
+                  "- Memberships with NDLI Club, e-ShodhSindhu, Shodhganga\n",
+                  "- Access to ACM Digital Library and GyanSindhu Digital Library"
+                ]
+              },
+              {
+                "tag": "library_statistics",
+                "patterns": [
+                  "How many books are in the library?",
+                  "What is the total number of books in the library?",
+                  "Can you tell me the statistics of the library's collection?"
+                ],
+                "responses": [
+                  "The library houses a total of 1,21,745 books, including:\n",
+                  "- Book Bank Section: 31,531\n",
+                  "- Reference Book Section: 8,787\n",
+                  "- Reserve Book Bank Section: 8,564\n",
+                  "- MBA Book Bank Section: 2,083\n",
+                  "- General Books Section: 55,595\n",
+                  "- Bound Journals: 10,160\n",
+                  "- ISI Codes: 5,025\n",
+                  "- Thesis: 77"
+                ]
+              },
+              {
+                "tag": "library_ebooks",
+                "patterns": [
+                  "How many e-books does the library have?",
+                  "Can I access e-books in the library?",
+                  "Tell me about the e-book collection."
+                ],
+                "responses": [
+                  "The library has 2,275 e-books from various publishers, including:\n",
+                  "- Pearson: 782\n",
+                  "- Wiley: 138\n",
+                  "- McGraw Hill: 178\n",
+                  "- Springer: 885\n",
+                  "- New Age International: 292"
+                ]
+              },
+              {
+                "tag": "library_ejournals",
+                "patterns": [
+                  "How many e-journals are available in the library?",
+                  "Can I access e-journals in the library?",
+                  "Tell me about the e-journal collection."
+                ],
+                "responses": [
+                  "The library has access to 21,943 e-journals, including:\n",
+                  "- IEEE E-Journals: 205\n",
+                  "- ASCE E-Journals: 36\n",
+                  "- Springer Nature E-Journals: 1,701\n",
+                  "- J-Gate Science & Technology E-Journals: 19,518\n",
+                  "- Gale InfoTrac Pharmacy Collection E-Journals: 483"
+                ]
+              },
+              {
+                "tag": "library_reading_space",
+                "patterns": [
+                  "What is the capacity of the library's reading rooms?",
+                  "How many people can the library accommodate?",
+                  "Tell me about the library's reading facilities."
+                ],
+                "responses": [
+                  "The library has a total carpet area of 1,779.426 sq. meters, with:\n",
+                  "- Reading room capacity for 500 people\n",
+                  "- Air-conditioned reading space of 250.37 sq. meters"
+                ]
+              },
+              {
+                "tag": "library_software",
+                "patterns": [
+                  "What library software is used for issuing books?",
+                  "How is the library automated?",
+                  "Does the library use any specific software?"
+                ],
+                "responses": [
+                  "The library uses SOFTGRANTH software for fully automated issuing and returning of books. Additionally, OPAC (Online Public Access Catalogue) is available 24x7 on the intranet."
+                ]
+              },
+              {
+                "tag": "library_digital_resources",
+                "patterns": [
+                  "What digital resources are available in the library?",
+                  "Does the library have access to digital learning platforms?",
+                  "Tell me about the online resources in the library."
+                ],
+                "responses": [
+                  "The library provides access to:\n",
+                  "- National Digital Library (NDLI)\n",
+                  "- e-ShodhSindhu\n",
+                  "- Shodhganga\n",
+                  "- ACM Digital Library\n",
+                  "- GyanSindhu Digital Library (accessible remotely via MyLoft Mobile app)"
+                ]
+              },
+              {
+                "tag": "library_ndl_database",
+                "patterns": [
+                  "What is in the NDL database?",
+                  "Tell me about the NDL collection.",
+                  "What resources are available in the NDL database?"
+                ],
+                "responses": [
+                  "The NDL (National Digital Library) database includes:\n",
+                  "- Catalogue of Books: 44,223\n",
+                  "- List of Current Periodicals: 11,741\n",
+                  "- Articles Database: 24,915,239\n",
+                  "- E-books Database: 4,630,338\n",
+                  "- CD-ROM Database: 1,101\n",
+                  "- Video Recordings: 78,469\n",
+                  "- Sound Recordings: 2,14,831\n",
+                  "- Thesis and Dissertations: 5,80,736"
+                ]
+              }, {
+                "tag": "workshop_overview",
+                "patterns": [
+                  "Tell me about the Central Workshop.",
+                  "What is the Central Workshop at MMMUT?",
+                  "Provide an overview of the workshop."
+                ],
+                "responses": [
+                  "The Central Workshop was established in 1962 and serves as a central facility for undergraduate and postgraduate engineering students. ",
+                  "It supports practical classes, final year projects, co-curricular activities such as Robomania and Junkyard Warz, and research activities. ",
+                  "Facilities are used for fabricating experimental setups for dissertations and research."
+                ]
+              },
+              {
+                "tag": "workshop_superintendent",
+                "patterns": [
+                  "Who is the Workshop Superintendent?",
+                  "Who oversees the Central Workshop?",
+                  "Provide details about the Workshop Superintendent."
+                ],
+                "responses": [
+                  "Anjani Kumar Singh is the Workshop Superintendent. Contact details:\n",
+                  "- Email: ws@mmmut.ac.in"
+                ]
+              },
+              {
+                "tag": "workshop_staff",
+                "patterns": [
+                  "Who are the staff members in the Central Workshop?",
+                  "Tell me about the workshop staff.",
+                  "Provide details about the workshop employees."
+                ],
+                "responses": [
+                  "The Central Workshop staff includes:\n",
+                  "- Vivek Kumar Yadav (Foreman Instructor), Mobile: 9450434845, Email: vivekforman@mmmut.ac.in\n",
+                  "- Brijesh Singh (Foreman Instructor), Mobile: 8052724273, Email: bsws@mmmut.ac.in\n",
+                  "- Ajay Kumar Mishra (Senior Workshop Instructor), Mobile: 9450682862, Email: akmswi@mmmut.ac.in\n",
+                  "- Gopal Lal (Senior Workshop Instructor), Mobile: 9451797496, Email: gopalswi@mmmut.ac.in\n",
+                  "- Rajesh Kumar Srivastava (Senior Workshop Instructor), Mobile: 9358970331, Email: rksswi@mmmut.ac.in\n",
+                  "- Durgesh Kumar Yadav (Senior Workshop Instructor), Mobile: 8545983636, Email: dkyswi@mmmut.ac.in\n",
+                  "- Ashok Kumar (Senior Workshop Instructor), Mobile: 9307132225, Email: akjwi@mmmut.ac.in\n",
+                  "- Shyam Sundar (Junior Workshop Instructor), Mobile: 9919003650, Email: ssmecha@mmmut.ac.in\n",
+                  "- Praveen Kumar (Mechanic Grade A), Mobile: 9415693506, Email: pkmecha@mmmut.ac.in\n",
+                  "- Kailash Prakash Sharma (Mechanic Grade B), Mobile: 8738905040, Email: kpsmgb@mmmut.ac.in\n",
+                  "- Taib Ali (Mechanic Grade B), Mobile: 8840824143, Email: tamgb@mmmut.ac.in\n",
+                  "- Amar Singh Chauhan (Mechanic cum Store Keeper), Mobile: 9651932401, Email: ascws@mmmut.ac.in\n",
+                  "- Rajkumar Verma (Workshop Attendant), Mobile: 9695217486, Email: rkvws@mmmut.ac.in\n",
+                  "- Rajeshwar (Workshop Attendant), Mobile: 9450142871, Email: rws@mmmut.ac.in\n",
+                  "- Rajesh Kumar Sharma (Workshop Attendant), Mobile: 9839507301, Email: rksws@mmmut.ac.in\n",
+                  "- Ramnayan (Peon), Mobile: 9198762779, Email: rnws@mmmut.ac.in\n",
+                  "- Lalmani (Sweeper), Mobile: 8400911875"
+                ]
+              },
+              {
+                "tag": "workshop_facilities",
+                "patterns": [
+                  "What facilities are available in the Central Workshop?",
+                  "Tell me about the workshop facilities.",
+                  "What shops are part of the workshop?"
+                ],
+                "responses": [
+                  "The Central Workshop has the following facilities:\n",
+                  "- Carpentry & Pattern Making Shop: Wood Working Lathe Machine, Circular Saw, Table Saw, etc.\n",
+                  "- Machine Shop: Centre Lathe, Milling Machine, Shaper, Bench Grinder, Surface Grinder, etc.\n",
+                  "- Fitting Shop: Bench Vice, Bench Drilling Machine, Surface Plate, etc.\n",
+                  "- Sheet Metal Shop: Power Press, Sheet Bending Machine, Edge Folding Machine, etc.\n",
+                  "- Black Smithy Shop: Swage Block, Anvils, Coal-Fired Furnaces, etc.\n",
+                  "- Welding Shop: Electric Arc Welding Setup, Oxy-Acetylene Gas Welding Equipment.\n",
+                  "- Foundry Shop: Cupola Furnace, Tilting Type Oil-Fired Crucible Furnace.\n",
+                  "- Metrology Shop: Surface Roughness Tester, Digital Vernier Caliper, Micrometer, Bevel Protector, GO and NO-GO Gauge, etc."
+                ]
+              },
+              {
+                "tag": "workshop_contact",
+                "patterns": [
+                  "How can I contact the Central Workshop?",
+                  "Who should I contact for workshop-related queries?",
+                  "Provide the contact details for the workshop."
+                ],
+                "responses": [
+                  "For workshop-related queries, contact:\n",
+                  "- Workshop Superintendent: Anjani Kumar Singh, Mobile: 8765783687, Email: ws@mmmut.ac.in\n",
+                  "- Foreman Instructor: Vivek Kumar Yadav, Mobile: 9450434845, Email: vivekforman@mmmut.ac.in"
+                ]
+              }, {
+                "tag": "itrc_overview",
+                "patterns": [
+                  "What is the Information Technology Resource Centre?",
+                  "Tell me about ITRC at MMMUT.",
+                  "What does the ITRC provide?"
+                ],
+                "responses": [
+                  "The Information Technology Resource Centre (ITRC) was established in 2005 under the World Bank programme (TEQIP-I). ",
+                  "It serves as a central IT facility for students, faculty, and staff, supporting the teaching-learning process and research. ",
+                  "ITRC manages the campus-wide local area network and provides 24-hour access to advanced computer networking hardware and software."
+                ]
+              },
+              {
+                "tag": "itrc_facilities",
+                "patterns": [
+                  "What facilities are available at ITRC?",
+                  "Tell me about the resources provided by ITRC.",
+                  "What labs and equipment does ITRC have?"
+                ],
+                "responses": [
+                  "Facilities available at ITRC include:\n",
+                  "- 5 high-end servers (2 HP Rack Mount Servers, 3 Blade Servers)\n",
+                  "- Power backup (2 x 20KVA UPS, 6 x 10KVA UPS, 2 x 5KVA UPS, and a 10KVA generator)\n",
+                  "- Four general computing labs with 240 computers for UG and PG students\n",
+                  "- Internet connectivity through OFC (5 km) for academic buildings, hostels, and residences\n",
+                  "- Wi-Fi facility in academic buildings and hostels\n",
+                  "- Security system management through CCTV/IP cameras\n",
+                  "- Seminar hall with Virtual Class Facility (Arya Bhatt Hall, capacity: 200 seats)"
+                ]
+              },
+              {
+                "tag": "itrc_internet",
+                "patterns": [
+                  "What internet facilities does ITRC provide?",
+                  "Tell me about the internet connectivity in ITRC.",
+                  "How is the internet managed at ITRC?"
+                ],
+                "responses": [
+                  "ITRC provides high-speed internet connectivity through:\n",
+                  "- 1 Gbps (1:1) NKN leased line from RailTel\n",
+                  "- 155 Mbps (1:1) BSNL leased line (backup)\n",
+                  "Both lines run parallel to ensure uninterrupted connectivity across departments, labs, hostels, and residences."
+                ]
+              },
+              {
+                "tag": "itrc_network",
+                "patterns": [
+                  "What is the network infrastructure at ITRC?",
+                  "Tell me about the campus network managed by ITRC.",
+                  "What is the network setup of ITRC?"
+                ],
+                "responses": [
+                  "The campus network managed by ITRC includes:\n",
+                  "- Core Switch Layer 3 for distribution and access management\n",
+                  "- Cyberoam Firewall for internet security of 2500 users\n",
+                  "- Wi-Fi controllers with licenses for 425 devices\n",
+                  "- PoE Access Switches (30 HP, 42 x 8-Port HP Aruba, 11 x 24-Port HP Aruba)\n",
+                  "- Network storage devices: NAS and SAN"
+                ]
+              },
+              {
+                "tag": "itrc_software",
+                "patterns": [
+                  "What software licenses are available at ITRC?",
+                  "Tell me about the software provided by ITRC.",
+                  "What academic software is licensed by ITRC?"
+                ],
+                "responses": [
+                  "ITRC provides software licenses, including:\n",
+                  "- Microsoft Campus Agreement for academic software (270 users)\n",
+                  "- Windows Server 8.0 and 12.0\n",
+                  "- SQL Server under Windows 12 Server\n",
+                  "- PRO-E/PTC CREO (Mechanical Engineering Department)\n",
+                  "- ANSYS (Mechanical, Electrical, Electronics Engineering, 10 users)\n",
+                  "- STAD PRO (Civil Engineering Department, 25 users)\n",
+                  "- MAT Lab (Base version with tools, 50 users for multiple departments)"
+                ]
+              },
+              {
+                "tag": "itrc_security",
+                "patterns": [
+                  "How does ITRC manage security?",
+                  "Tell me about the security system managed by ITRC.",
+                  "What is the role of ITRC in campus security?"
+                ],
+                "responses": [
+                  "ITRC manages the security system using:\n",
+                  "- CCTV and IP cameras installed at key locations\n",
+                  "- Cyberoam Firewall for internet security of 2500 users"
+                ]
+              },
+              {
+                "tag": "itrc_power_backup",
+                "patterns": [
+                  "Does ITRC have a power backup?",
+                  "How does ITRC ensure uninterrupted power?",
+                  "What power backup facilities does ITRC provide?"
+                ],
+                "responses": [
+                  "ITRC is equipped with robust power backup systems, including:\n",
+                  "- 2 x 20KVA online UPS\n",
+                  "- 6 x 10KVA online UPS\n",
+                  "- 2 x 5KVA online UPS\n",
+                  "- 10KVA generator"
+                ]
+              },
+              {
+                "tag": "itrc_virtual_class",
+                "patterns": [
+                  "Does ITRC have virtual classroom facilities?",
+                  "What seminar halls are managed by ITRC?",
+                  "Tell me about the Arya Bhatt Hall."
+                ],
+                "responses": [
+                  "ITRC manages Arya Bhatt Hall, a seminar hall with virtual classroom facilities, having a seating capacity of 200."
+                ]
+              },{
+                "tag": "csa_overview",
+                "patterns": [
+                  "What is the Council of Student Activities?",
+                  "Tell me about CSA at MMMUT.",
+                  "What does the CSA manage?"
+                ],
+                "responses": [
+                  "The Council of Student Activities (CSA) manages and coordinates extracurricular and co-curricular activities at MMMUT. ",
+                  "It is headed by a Professor-level faculty member, assisted by Vice Chairmen, an OSD, and the PTI. ",
+                  "CSA oversees sub-councils like the Technical Sub Council, Sports Sub Council, Cultural Sub Council, NSS, NCC, and others. ",
+                  "Students participate in activities and earn marks/grades for General Proficiency. ",
+                  "The University also supports student participation in national-level festivals across India."
+                ]
+              },
+              {
+                "tag": "csa_office_bearers",
+                "patterns": [
+                  "Who are the office bearers of CSA?",
+                  "Tell me about the CSA members.",
+                  "Who is the chairman of CSA?"
+                ],
+                "responses": [
+                  "The office bearers of the CSA are:\n",
+                  "- Prof. Rakesh Kumar, Chairman, Contact: 9235500529\n",
+                  "- Dr. Rajan Mishra, Vice Chairman, Contact: 9235500560\n",
+                  "- Dr. Harish Chandra, Vice Chairman, Contact: 9235501647\n",
+                  "- Dr. Abhijit Mishra, OSD, Contact: 9235552357\n",
+                  "- Shri Arun Kumar Singh, Member Secretary of all Sub-Councils, Contact: 8765783686"
+                ]
+              },
+              {
+                "tag": "csa_facilities",
+                "patterns": [
+                  "What facilities does CSA provide?",
+                  "Tell me about the sports facilities at CSA.",
+                  "What are the resources available under CSA?"
+                ],
+                "responses": [
+                  "CSA provides a variety of facilities including:\n",
+                  "- A state-of-the-art sports stadium named ‘Shaheed Bandhu Singh Stadium’, with outdoor and indoor sports facilities, including:\n",
+                  "  - Football ground, Hockey ground, Cricket pitch, Track & Field activities, two indoor Basketball courts, and a Pavilion with a 300 seating capacity.\n",
+                  "- Indoor sports: Table Tennis, Badminton, Carrom, Chess, Billiards.\n",
+                  "- Outdoor sports: Skating and Tennis courts, Football, Kabaddi, Volleyball.\n",
+                  "- Separate gymnasiums for boys and girls with modern equipment.\n",
+                  "- Multi-Purpose Hall (MPH): A fully air-conditioned auditorium with a seating capacity of 800, equipped with a 40x30 feet stage, greenrooms, and a robust PA/audio-visual system.\n",
+                  "- Cultural Ground for open-air functions near the Civil Engineering Department."
+                ]
+              },
+              {
+                "tag": "csa_sub_councils",
+                "patterns": [
+                  "What sub-councils are under CSA?",
+                  "Tell me about the clubs managed by CSA.",
+                  "What activities are organized by CSA sub-councils?"
+                ],
+                "responses": [
+                  "CSA manages several sub-councils, cells, and clubs, including:\n",
+                  "- Technical Sub Council\n",
+                  "- Sports Sub Council\n",
+                  "- Cultural Sub Council\n",
+                  "- NSS (National Service Scheme)\n",
+                  "- NCC (National Cadet Corps)\n",
+                  "These sub-councils organize a variety of events and activities throughout the year, making the campus vibrant."
+                ]
+              },
+              {
+                "tag": "csa_sports_facilities",
+                "patterns": [
+                  "What sports facilities are available under CSA?",
+                  "Does CSA have a stadium?",
+                  "Tell me about the sports resources managed by CSA."
+                ],
+                "responses": [
+                  "CSA provides the following sports facilities:\n",
+                  "- Shaheed Bandhu Singh Stadium (12 acres), with:\n",
+                  "  - Football ground, Hockey ground, Cricket pitch, grassy ground for Track & Field activities, two indoor Basketball courts.\n",
+                  "- Indoor sports: Table Tennis, Badminton, Carrom, Chess, and Billiards.\n",
+                  "- Outdoor sports: Skating and Tennis courts, Football, Kabaddi, Volleyball.\n",
+                  "- Gymnasiums: Separate gyms for boys and girls with modern equipment."
+                ]
+              },
+              {
+                "tag": "csa_mph",
+                "patterns": [
+                  "What is the Multi-Purpose Hall?",
+                  "Tell me about MPH at CSA.",
+                  "Does CSA have an auditorium?"
+                ],
+                "responses": [
+                  "CSA has a Multi-Purpose Hall (MPH), a fully air-conditioned auditorium with a seating capacity of 800. ",
+                  "It is equipped with a 40x30 feet stage, two greenrooms, and a robust PA/audio-visual presentation system."
+                ]
+              },
+              {
+                "tag": "csa_cultural_ground",
+                "patterns": [
+                  "What is the Cultural Ground near the Civil Engineering Department?",
+                  "Tell me about the open-air functions hosted by CSA.",
+                  "Does CSA have an open-air venue for cultural events?"
+                ],
+                "responses": [
+                  "CSA has a Cultural Ground near the Civil Engineering Department. ",
+                  "It is used to host open-air and outdoor cultural functions and events."
+                ]
+              }, {
+                "tag": "vice_chancellor_bio",
+                "patterns": [
+                  "Tell me about the Vice Chancellor.",
+                  "Who is Prof. Jai Prakash Saini?",
+                  "Give me information about the Vice Chancellor of MMMUT."
+                ],
+                "responses": [
+                  "Prof. Jai Prakash Saini is the Vice Chancellor of Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur. ",
+                  "He assumed office on 27th September 2023. Prior to joining MMMUT, Prof. Saini served as the Vice Chancellor of Netaji Subhas University of Technology (NSUT), New Delhi for 5 years, and additionally held the charge of Vice Chancellor of Delhi Technological University (DTU), New Delhi for 2 years. ",
+                  "He has also been the Director of several prestigious institutes, including Netaji Subhas Institute of Technology, New Delhi, and Dr. Ambedkar Institute of Technology for Handicapped U.P., Kanpur. ",
+                  "He has a B.Tech. (Electronics Engineering) from KNIT Sultanpur, M.Tech. (Electrical Engineering) from IIT Kanpur, and Ph.D. (Electronics Engineering) from KNIT Sultanpur/Dr. R.M.L Avadh University, Faizabad. ",
+                  "Prof. Saini has more than 36 years of experience in academia and administration and has published over 225 research papers in national and international journals."
+                ]
+              },
+              {
+                "tag": "vice_chancellor_contact",
+                "patterns": [
+                  "How can I contact Prof. Jai Prakash Saini?",
+                  "What is the contact information of the Vice Chancellor?",
+                  "Provide the contact details for Prof. Jai Prakash Saini."
+                ],
+                "responses": [
+                  "You can contact Prof. Jai Prakash Saini at:\n",
+                  "- Phone: 9235500529"
+                ]
+              },
+              {
+                "tag": "vice_chancellor_achievements",
+                "patterns": [
+                  "What are the achievements of Prof. Jai Prakash Saini?",
+                  "Tell me about the contributions of the Vice Chancellor.",
+                  "What is Prof. Jai Prakash Saini known for?"
+                ],
+                "responses": [
+                  "Prof. Jai Prakash Saini has held numerous important academic positions and has contributed significantly to the field of Electronics Engineering. ",
+                  "He has coordinated the U.P. State Entrance Examination for two terms and served as the Examination Controller at Uttar Pradesh Technical University, Lucknow. ",
+                  "He has also chaired and contributed to several Board of Studies, Academic Councils, and Planning Boards at prominent national universities and institutions. ",
+                  "Prof. Saini has supervised 33 Ph.D./M.Tech. theses and has published over 225 research papers in journals, conferences, and book chapters."
+                ]
+              },
+              {
+                "tag": "vice_chancellor_research",
+                "patterns": [
+                  "What research has Prof. Jai Prakash Saini contributed to?",
+                  "Tell me about the research work of the Vice Chancellor.",
+                  "What are Prof. Jai Prakash Saini’s research interests?"
+                ],
+                "responses": [
+                  "Prof. Jai Prakash Saini has made significant contributions in the fields of semiconductors, digital transmission, and mobile communication. ",
+                  "He has published over 225 research papers in renowned international journals and conferences. His work has appeared in Springer-Verlag, Elsevier, IEEE, and other reputed platforms. ",
+                  "Prof. Saini has also supervised 33 Ph.D. and M.Tech. theses, making a significant impact on the academic and research community."
+                ]
+              },
+              {
+                "tag": "vice_chancellor_mous",
+                "patterns": [
+                  "Has Prof. Jai Prakash Saini collaborated with other institutions?",
+                  "Tell me about the MoUs signed by Prof. Jai Prakash Saini.",
+                  "What collaborations has Prof. Jai Prakash Saini initiated?"
+                ],
+                "responses": [
+                  "Prof. Jai Prakash Saini has played an active role in formulating several Memoranda of Understanding (MoUs) for academic collaborations with national and international institutions and organizations."
+                ]
+              },  {
+                "tag": "no_match",
+                "patterns": [],
+                "responses": [
+                  "I'm sorry, I didn't understand that. Can you rephrase?",
+                  "I didn't catch that. Could you say it differently?"
+                ]
+              }
+           
       
-        {
-            "tag": "contact",
-            "patterns": [
-                "contact developer",
-                "contact Abhishek",
-                "contact programmer",
-                "contact creator"
-            ],
-            "responses": [
-                "You can contact my creator at his Linkedin profile : https://www.linkedin.com/in/abhishek007kumar/"
-            ]
-        },
-        {
-            "tag": "appreciate",
-            "patterns": [
-                "You are awesome",
-                "you are the best",
-                "you are great",
-                "you are good"
-            ],
-            "responses": [
-                "Thank you!"
-            ]
-        },
-        {
-            "tag": "nicetty",
-            "patterns": [
-                "it was nice talking to you",
-                "good talk"
-            ],
-            "responses": [
-                "It was nice talking to you as well! Come back soon!"
-            ]
-        },
-        {
-            "tag": "no",
-            "patterns": [
-                "no",
-                "nope"
-            ],
-            "responses": [
-                "ok"
-            ]
-        },
-        {
-            "tag": "news",
-            "patterns": [
-                "news",
-                "latest news",
-                "india news"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "cricket",
-            "patterns": [
-                "current cricket matches",
-                "cricket score"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "song",
-            "patterns": [
-                "top songs",
-                "best songs",
-                "hot songs",
-                " top 10 songs",
-                "top ten songs"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "greetreply",
-            "patterns": [
-                "i am good",
-                "I'm good",
-                "i am fine",
-                " i'm fine","good"
-            ],
-            "responses": [
-                "Good to know!"
-            ]
-        },
-        {
-            "tag": "timer",
-            "patterns": [
-                "set a timer"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "covid19",
-            "patterns": [
-                "covid 19 "
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "suggest",
-            "patterns": [
-                "you are useless","useless","suggest","suggestions","you are bad"
-            ],
-            "responses": [
-                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
-            ]
-        },
-            {"tag": "riddle",
-            "patterns": [
-                "Ask me a riddle",
-                "Ask me a question",
-                "Riddle"
-            ],
-            "responses": [
-                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
-                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
-                " How can a girl go 25 days without sleep?.....She sleeps and night!",
-                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
-                " What will you actually find at the end of every rainbow?.....The letter 'w'",
-                "What can be caught but never thrown?.....A cold!",
-                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
-                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
-                "Why can't a bike stand on it's own?.....It is two-tired."
-            ],
-            "context": [
-                "riddles"
-            ]
-        },
-        {
-            "tag": "age",
-           "patterns": [
-                "how old are you","when were you made","what is your age"
-            ],
-            "responses": [
-                "I was made in 2024, if that's what you are asking!"
-            ]
-        },
-    {
-        "tag": "About",
-        "patterns": ["what is MMMUT?","Madan mohan malviya university of technology"],
-        "responses": ["Madan Mohan Malaviya University of Technology, Gorakhpur has been established in year 2013 by the Government of Uttar Pradesh"],
-        "context": [""]
-    }, 
-    {
-        "tag": "Sports",
-        "patterns":["which sport does mmmut offer","games offered"],
-        "responses":["Indoor games: Table tennis, badminton, karrom, chess etc || outdoor games: cricket, kho kho, kabaddi,hockey , football"],
-        "context":[""]
-    },
-    {
-        "tag":"departments",
-        "patterns":["how many departments are there?","courses offered by university","courses offered by college"],
-        "responses":["There are total 8 courses offered in MMMUT: \n1.Computer Science and engineering \n2.Information technology \n3.Electronics and communication Engineering \n4.Electronics and communication Engineering(internet of things) \n5.Electrical Engineering \n6.Civil Engineering \n7. Mechanical Engineering \n8. Chemical Engineering"],
-        "context":[]
-    },
-    {
-        "tag":"courses fees",
-        "patterns":["what is the fees for the courses","how much college tuition fees","how much is admission fees"],
-        "responses":["the fees for your semester : http://mmmut.ac.in/FeeDetail/2887561570FeeDetail_06072021.pdf"],
-        "context":[]
-    }
-}
+      
+  
+
+    ]
+  }
+  
